@@ -1,0 +1,157 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[color]
+background = #282A36
+background-alt = #282a36
+foreground = #f8f8f2
+foreground-alt = #f8f8f2
+primary = #ffb86c
+secondary = #ff79c6
+alert = #ff5555
+shade1 = #6272a4
+shade2 = #bd93f9 
+
+acolor = #ECEFF4
+curgent = #BF616A
+coccupied = #5E81AC
+
+black   = #575b70
+red     = #ff6e67
+green   = #5af78e
+yellow  = #f4f99d
+blue    = #caa9fa
+magenta = #ff92d0
+cyan    = #9aedfe
+white   = #e6e6e6
+
+[bar/mybar]
+; monitor = ${env:MONITOR}
+wm-restack = bspwm
+override-redirect = true
+width = 100%
+height = 30
+radius = 6.0
+fixed-center = true
+bottom = true
+background = ${color.background}
+foreground = ${color.foreground}
+module-margin-left = 1
+module-margin-right = 1
+;============ fonts ============================================
+font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
+font-1 = "Fantasque Sans Mono:pixelsize=10;3"
+font-2 = "Iosevka Nerd Font:pixelsize=10;3"
+font-3 = "Noto Sans CJK JP:pixelsize=10;1"
+;============ fonts ============================================
+tray-position = right
+tray-background = ${color.shade1}
+modules-left = menu workspaces
+modules-center = spotify
+modules-right = xkeyboard date powermenu
+
+[module/menu]
+type = custom/text
+content = "  "
+; background = ${color.blue}
+content-foreground = ${color.foreground}
+click-left = ~/.config/polybar/script/launch
+click-right = ~/.config/polybar/script/launch
+
+[module/workspaces]
+type = internal/xworkspaces
+pin-workspaces = false
+enable-click = true
+enable-scroll = true
+format-padding = 1
+
+icon-default = 
+
+format = <label-state>
+format-background = ${color.shade1}
+label-active = 
+label-occupied = 
+label-urgent = 
+label-empty =  
+
+label-empty-padding = 1
+label-active-padding = 1
+label-urgent-padding = 1
+label-occupied-padding = 1
+
+label-empty-foreground = ${color.foreground}
+label-active-foreground = ${color.acolor}
+label-urgent-foreground = ${color.curgent}
+label-occupied-foreground = ${color.coccupied}
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix = " "
+format-prefix-foreground = ${color.foreground-alt}
+format-prefix-underline = ${color.secondary}
+
+label-layout = %layout%
+label-layout-underline = ${color.secondary}
+
+; label-indicator-padding = 2
+; label-indicator-margin = 1
+label-indicator-background = ${color.secondary}
+label-indicator-underline = ${color.secondary}
+
+[module/date]
+type = internal/date
+interval = 30
+time = %I:%M %p | %b, %d %Y 
+label =  %{A1:gsimplecal:}%time%%{A}
+click-left = gsimplecal
+click-right = gsimplecal
+
+[module/powermenu]
+type = custom/text
+content = 襤
+content-padding = 2
+content-background = ${color.red}
+content-foreground = ${color.foreground}
+click-left = ~/.config/polybar/script/sysmenu
+click-right = ~/.config/polybar/script/sysmenu
+
+[module/spotify]
+type = custom/script
+interval = 1
+format = <label>
+exec = python $HOME/.config/polybar/script/spotify -f '{artist}: {song}'
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+; margin-left = 3
+; margin-right = 3
+; margin-top = 5
+; margin-bottom = 5
+
+; vim:ft=dosini

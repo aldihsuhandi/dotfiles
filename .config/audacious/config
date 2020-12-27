@@ -1,0 +1,30 @@
+
+[alsa]
+mixer-element=master
+
+[audacious]
+generic_title_format=${?artist:${artist} - }${title}
+no_playlist_advance=TRUE
+repeat=TRUE
+shuffle=TRUE
+
+[audgui]
+filebrowser_win=183,104,1000,494
+filesel_path=/home/aldih/Music/playlist
+info_win=729,274,548,391
+
+[qtui]
+column_expand=1,1,1,0,0
+column_widths=10,275,175,244,175,450,10,100,32,36,275,275,275,10,75,275
+infoarea_show_vis=FALSE
+infoarea_visible=FALSE
+menu_visible=FALSE
+player_height=494
+player_width=1000
+player_x=183
+player_y=138
+playlist_columns=playing title artist album length
+statusbar_visible=FALSE
+
+[qtui-layout]
+item_count=0
