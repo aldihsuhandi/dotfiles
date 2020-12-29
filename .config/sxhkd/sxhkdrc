@@ -16,7 +16,7 @@ super + shift + v
 
 # config editor
 super + shift + c
-    $HOME/Documents/script/rofi/config-editor/./config-editor
+    $HOME/.config/sxhkd/script/config-editor
 
 # make sxhkd reload its configuration files:
 super + Escape
