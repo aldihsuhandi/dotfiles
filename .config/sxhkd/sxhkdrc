@@ -5,14 +5,18 @@
 # terminal emulator
 alt + Return
 	alacritty
-alt + shift + Return
-    bspc rule -a \* -o state=floating && alacritty
 
 # program launcher
 super + @space
     rofi -combi-modi drun,window -theme $HOME/.config/rofi/themes/dracula/dracula.rasi -font "hack 12" -show combi -display-combi "Search "
-super + alt + @space
-    bspc rule -a \* -o state=floating && rofi -combi-modi drun,window -theme $HOME/.config/rofi/themes/dracula/dracula.rasi -font "hack 12" -show combi -display-combi "Search "
+
+# youtube applet
+super + shift + v
+    $HOME/.config/sxhkd/script/./youtube-applet.sh
+
+# config editor
+super + shift + c
+    $HOME/Documents/script/rofi/config-editor/./config-editor
 
 # make sxhkd reload its configuration files:
 super + Escape

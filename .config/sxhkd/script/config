@@ -1,0 +1,11 @@
+vimrc $HOME/.vimrc
+zshrc $HOME/.zshrc
+bashrc $HOME/.bashrc
+alacritty $HOME/.config/alacritty/alacritty.yml
+starship $HOME/.config/starship.toml
+sxhkd $HOME/.config/sxhkd/sxhkdrc
+bspwm $HOME/.config/bspwm/bspwmrc
+openbox $HOME/.config/openbox
+rofi $HOME/.config/rofi/config.rasi
+picom $HOME/.config/picom/picom.conf
+polybar $HOME/.config/polybar/config
