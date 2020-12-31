@@ -52,7 +52,7 @@ MENU="$(rofi -no-lazy-grab -sep "|" -dmenu -i -p 'System :' \
 <<< "  Lock|  Logout|  Reboot|  Shutdown")"
 case "$MENU" in
   *Lock) light-locker-command -l;;
-  *Logout) openbox --exit;;
+  *Logout) bspc quit;;
   *Reboot) systemctl reboot;;
   *Shutdown) systemctl -i poweroff
 esac

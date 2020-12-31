@@ -18,7 +18,6 @@
 
 [color]
 background = #282A36
-background-alt = #282a36
 foreground = #f8f8f2
 foreground-alt = #f8f8f2
 primary = #ffb86c
@@ -63,7 +62,7 @@ tray-position = right
 tray-background = ${color.shade1}
 modules-left = menu workspaces
 modules-center = spotify
-modules-right = xkeyboard date powermenu
+modules-right = network date powermenu
 
 [module/menu]
 type = custom/text
@@ -118,7 +117,8 @@ label-indicator-underline = ${color.secondary}
 [module/date]
 type = internal/date
 interval = 30
-time = %I:%M %p | %b, %d %Y 
+time = %a, %I:%M %p
+; time = %I:%M %p | %b, %d %Y 
 label =  %{A1:gsimplecal:}%time%%{A}
 click-left = gsimplecal
 click-right = gsimplecal
@@ -131,6 +131,12 @@ content-background = ${color.red}
 content-foreground = ${color.foreground}
 click-left = ~/.config/polybar/script/sysmenu
 click-right = ~/.config/polybar/script/sysmenu
+
+[module/network]
+type = internal/network
+interface = wlo1
+interval = 1.0
+label-connected = "ﰬ %downspeed%|ﰵ %upspeed%"
 
 [module/spotify]
 type = custom/script
