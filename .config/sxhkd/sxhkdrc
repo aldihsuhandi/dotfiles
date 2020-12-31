@@ -12,11 +12,11 @@ super + @space
 
 # youtube applet
 super + shift + v
-    $HOME/.config/sxhkd/script/./youtube-applet.sh
+    $HOME/.config/wm\ script/youtube-applet/youtube-applet.sh
 
 # config editor
 super + shift + c
-    $HOME/.config/sxhkd/script/config-editor
+    $HOME/.config/wm\ script/config-editor/config-editor
 
 # make sxhkd reload its configuration files:
 super + Escape

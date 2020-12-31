@@ -18,8 +18,8 @@ std::string file_dir()
 
 void read_config()
 {
-    std::string file_path = file_dir() + "/.config/sxhkd/script/config";
-    // printf("%s\n", file_path.c_str());
+    std::string file_path = file_dir() + "/.config/wm script/config-editor/config";
+    printf("%s\n", file_path.c_str());
     FILE *file = fopen(file_path.c_str(), "r");
     char pth[1000], config[1000];
     while(!feof(file)){
