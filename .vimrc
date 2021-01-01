@@ -11,7 +11,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'preservim/nerdcommenter'
 Plugin 'preservim/nerdtree'
-Plugin 'ap/vim-css-color'
+" Plugin 'ap/vim-css-color'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/goyo.vim'
@@ -55,16 +55,19 @@ set laststatus=2
 set splitbelow splitright
 
 " cursor
-let &t_SI = "\<Esc>]50;CursorShape=2\x7"
-let &t_EI = "\<Esc>]50;CursorShape=0\x6"
+let &t_SI = "\e[4 q"
+let &t_EI = "\e[2 q"
 
 " statusline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline_theme = 'atomic'
-let g:airline_section_b = '%{strftime("%c")}'
-let g:airline_section_y = 'BN: %{bufnr("%")}'
+let g:airline_section_b = ''
+let g:airline_section_y = ''
+let g:airline_section_z = ''
+" let g:airline_theme = 'atomic'
+" let g:airline_section_b = '%{strftime("%c")}'
+" let g:airline_section_y = 'BN: %{bufnr("%")}'
 
 filetype plugin on
 
@@ -125,5 +128,3 @@ inoremap {<CR> {<CR>}<Esc>ko
 
 " Alacritty fix
 set ttymouse=sgr
-
-

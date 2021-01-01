@@ -46,5 +46,3 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Nitrogen state=floating
 bspc rule -a Kvantum\ Manager state=floating
-# bspc rule -a alacritty:floating state=floating
-# bspc rule -a Kvantum state=floating
