@@ -6,9 +6,12 @@
 alt + Return
 	alacritty
 
+alt + shift + Return
+    kitty
+
 # program launcher
 super + @space
-    rofi -combi-modi drun,window -theme $HOME/.config/rofi/themes/dracula/dracula.rasi -font "hack 12" -show combi -display-combi "Search " -no-fixed-num-lines -yoffset -150
+    $HOME/.config/wm\ script/rofi-select/rofi-select.sh
 
 # youtube applet
 super + shift + v
@@ -158,4 +161,8 @@ XF86AudioStop
 @Print
     spectacle
 shift + @Print
-    maim -s | xclip -selection clipboard -t image/png
+    $HOME/.config/wm\ script/screenshot-select/screenshot-select.sh
+
+# rotate
+super + shift + r
+    bspc node @/ -R 90

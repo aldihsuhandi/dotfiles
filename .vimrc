@@ -128,3 +128,4 @@ inoremap {<CR> {<CR>}<Esc>ko
 
 " Alacritty fix
 set ttymouse=sgr
+hi Normal guibg=NONE ctermbg=NONE

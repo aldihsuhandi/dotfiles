@@ -129,6 +129,5 @@ alias weather='curl wttr.in'
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
 # prelaunch command
-ssh-add ssh/github/aldih
 clear
 eval "$(starship init zsh)"

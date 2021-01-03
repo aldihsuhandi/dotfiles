@@ -49,7 +49,7 @@ mainbox {
 prompt {
   background-color: @blue;
   enabled: true;
-  font: "Roboto 12";
+  font: "JetBrainsMono Nerd Font 12";
   padding: 12 0 0 12;
   text-color: @fg;
 }

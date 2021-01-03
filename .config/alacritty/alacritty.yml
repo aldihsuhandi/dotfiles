@@ -15,13 +15,13 @@ background_opacity: 0.97
 # font configuration
 font:
   normal:
-    family: hack
+    family: JetBrainsMono Nerd Font
     style: Regular
   bold:
-    family: hack
+    family: JetBrainsMono Nerd Font
     style: Bold
   italic:
-    family: hack
+    family: JetBrainsMono Nerd Font
     style: Italic
   size: 11.5
 

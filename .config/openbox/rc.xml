@@ -309,7 +309,7 @@
     <!-- </keybind> -->
     <keybind key="W-space">
       <action name="Execute">
-        <command>~/.config/openbox/script/./rofi-run.sh</command>
+        <command>~/.config/wm\ script/rofi-select/rofi-select.sh</command>
       </action>
     </keybind>
     <keybind key="W-S-c">
@@ -493,7 +493,7 @@
     </keybind>
     <keybind key="S-Print">
       <action name="Execute">
-        <command>~/.config/openbox/script/./selection\ screenshot.sh</command>
+        <command>~/.config/wm\ script/screenshot-select/screenshot-select.sh</command>
       </action>
     </keybind>
   </keyboard>
