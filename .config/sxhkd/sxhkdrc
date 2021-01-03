@@ -8,9 +8,6 @@ alt + Return
 alt + shift + Return
     kitty
 
-alt + shift + Return
-    kitty
-
 # program launcher
 super + @space
     $HOME/.config/wm\ script/rofi-select/rofi-select.sh
