@@ -19,7 +19,7 @@ std::string file_dir()
 void read_config()
 {
     std::string file_path = file_dir() + "/.config/wm script/config-editor/config";
-    printf("%s\n", file_path.c_str());
+    // printf("%s\n", file_path.c_str());
     FILE *file = fopen(file_path.c_str(), "r");
     char pth[1000], config[1000];
     while(!feof(file)){
@@ -42,7 +42,7 @@ int main()
         flag = true;
     }
     
-    cmd = "rofi -dmenu -window-title \"config   :\" -sep \"|\" <<< \"" + rofi_config + "\" -columns 1 -hide-scrollbar -theme $HOME/.config/rofi/themes/dracula/dracula.rasi";
+    cmd = "bash -c 'rofi -dmenu -window-title \"config   :\" -sep \"|\" <<< \"" + rofi_config + "\" -columns 1 -hide-scrollbar -theme $HOME/.config/rofi/themes/dracula/dracula.rasi -no-fixed-num-lines -yoffset -150'";
     FILE *rofi_output = popen(cmd.c_str(), "r");
     char output[1000];
     fscanf(rofi_output, "%s\n", output);
