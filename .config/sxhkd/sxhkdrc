@@ -5,6 +5,8 @@
 # terminal emulator
 alt + Return
 	alacritty
+alt + shift + Return
+    kitty
 
 alt + shift + Return
     kitty
