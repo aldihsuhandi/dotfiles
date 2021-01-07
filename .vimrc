@@ -11,7 +11,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'preservim/nerdcommenter'
 Plugin 'preservim/nerdtree'
-" Plugin 'ap/vim-css-color'
+Plugin 'ap/vim-css-color'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/goyo.vim'
@@ -33,6 +33,7 @@ Plugin 'reedes/vim-colors-pencil'
 Plugin 'liuchengxu/space-vim-dark'
 Plugin 'fmoralesc/molokayo'
 Plugin 'netsgnut/arctheme.vim'
+Plugin 'NLKNguyen/papercolor-theme'
 
 call vundle#end()   
 filetype plugin indent on
@@ -73,8 +74,8 @@ filetype plugin on
 
 " Color Scheme
 let g:gruvbox_italic = 1
-colorscheme dracula
-set background=dark
+colorscheme PaperColor
+set background=light
 hi Comment cterm=italic
 let g:onedark_termcolors = 1
 set termguicolors

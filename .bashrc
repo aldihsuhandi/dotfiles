@@ -13,9 +13,10 @@ alias mkdir='mkdir -p'
 alias free='free -h -m'
 alias kernel='uname -r'
 alias cl='clear'
+alias claer='clear'
 alias v='vim'
 alias sv='sudo vim'
-alias svim='sudo vim'
+alias svim='sudoedit'
 alias htop='bashtop'
 alias grep='rg'
 alias df='df -h'
@@ -66,13 +67,13 @@ compile ()
 shopt -s autocd
 
 # powerline 
-function _update_ps1() {
-    PS1=$(powerline-shell $?)
-}
+# function _update_ps1() {
+#     PS1=$(powerline-shell $?)
+# }
 
-if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
+# if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+#     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+# fi
 
 # coding template
 templatecpp(){
@@ -110,3 +111,7 @@ alias pac="$HOME/Documents/script/pac/./pac"
 # curl?
 alias weather='curl wttr.in'
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
+
+
+# prelaunched command
+eval "$(starship init bash)"

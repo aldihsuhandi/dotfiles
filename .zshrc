@@ -13,7 +13,7 @@ alias kernel='uname -r'
 alias cl='clear'
 alias claer='clear'
 alias v='vim'
-alias sv='sudo vim'
+alias sv='sudoedit'
 alias svim='sudoedit'
 alias grep='rg'
 alias df='df -h'
@@ -66,18 +66,18 @@ compile ()
 #     PS1="$(powerline-shell --shell zsh $?)"
 # }
 
-function install_powerline_precmd() {
-  for s in "${precmd_functions[@]}"; do
-    if [ "$s" = "powerline_precmd" ]; then
-      return
-    fi
-  done
-  precmd_functions+=(powerline_precmd)
-}
+# function install_powerline_precmd() {
+#   for s in "${precmd_functions[@]}"; do
+#     if [ "$s" = "powerline_precmd" ]; then
+#       return
+#     fi
+#   done
+#   precmd_functions+=(powerline_precmd)
+# }
 
-if [ "$TERM" != "linux" ]; then
-    install_powerline_precmd
-fi
+# if [ "$TERM" != "linux" ]; then
+#     install_powerline_precmd
+# fi
 
 # autocd
 setopt  autocd autopushd

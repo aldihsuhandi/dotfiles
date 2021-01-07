@@ -8,14 +8,14 @@ configuration {
 }
 
 * {
-  blue: #6272a4;
-  purple: #bd93f9;
-  darkpurple: #8f2be5;
-  fg: #f8f8f2;
-  white: #ffffff;
+  blue: #327698;
+  purple: #7759b4;
+  darkpurple: #6845ad;
+  fg: #33374c;
+  white: #33374c;
 
-  bg: #282a36;
-  bg-alt: #44475a;
+  bg: #e8e9ec;
+  bg-alt: #e8e9ec;
 
   background-color: @bg;
   

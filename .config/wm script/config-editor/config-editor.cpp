@@ -42,7 +42,7 @@ int main()
         flag = true;
     }
     
-    cmd = "bash -c 'rofi -dmenu -window-title \"config   :\" -sep \"|\" <<< \"" + rofi_config + "\" -columns 1 -hide-scrollbar -theme $HOME/.config/rofi/themes/dracula/dracula.rasi -no-fixed-num-lines -yoffset -150'";
+    cmd = "bash -c 'rofi -dmenu -window-title \"config:  \" -sep \"|\" <<< \"" + rofi_config + "\" -columns 1 -hide-scrollbar -theme $HOME/.config/rofi/themes/iceberg/iceberg.rasi -no-fixed-num-lines -yoffset -150'";
     FILE *rofi_output = popen(cmd.c_str(), "r");
     char output[1000];
     fscanf(rofi_output, "%s\n", output);

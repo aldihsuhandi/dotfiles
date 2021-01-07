@@ -9,3 +9,4 @@ openbox $HOME/.config/openbox
 rofi $HOME/.config/rofi/config.rasi
 picom $HOME/.config/picom/picom.conf
 polybar $HOME/.config/polybar/config
+kitty $HOME/.config/kitty/kitty.conf
