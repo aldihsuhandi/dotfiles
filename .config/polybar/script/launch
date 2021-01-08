@@ -1,5 +1,7 @@
 #!/bin/bash
 
+theme="iceberg"
+
 # Launch rofi with custom configuration
 rofi -show drun \
 -display-drun "Search " \
@@ -13,7 +15,7 @@ rofi -show drun \
 -location 7\
 -columns 1 \
 -font "Roboto Mono 11" \
--theme $HOME/.config/rofi/themes/dracula/dracula.rasi
+-theme $HOME/.config/rofi/themes/$theme/$theme.rasi
 # -font "Cantarell 11" \
 # -color-enabled true \
 # -color-window "#303145,#303145,#303145" \
