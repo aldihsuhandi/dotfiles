@@ -121,6 +121,12 @@ alias sl="ls"
 alias l="ls"
 alias s="ls"
 
+# devour alias
+alias eog="devour eog"
+alias celluloid="devour celluloid"
+alias mpv="devour mpv"
+alias okular="devour okular"
+
 # alias for package manager
 alias pac="$HOME/Documents/script/pac/./pac"
 
@@ -129,5 +135,6 @@ alias weather='curl wttr.in'
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
 # prelaunch command
+ssh-add ssh/github/aldih
 clear
 eval "$(starship init zsh)"

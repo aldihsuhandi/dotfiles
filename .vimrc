@@ -47,7 +47,7 @@ set expandtab
 set smarttab
 set smartindent
 set autoindent
-set number
+set relativenumber number
 set ruler
 set clipboard=unnamedplus
 set cursorline
