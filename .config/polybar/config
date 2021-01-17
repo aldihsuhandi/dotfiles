@@ -30,7 +30,7 @@
 ; red     = #ff6e67
 
 ; iceberg
-background      =   #e8e9ec
+background      =   #aae8e9ec
 foreground      =   #33374c
 foreground-alt  =   #dcdfe7
 alert           =   #cc517a
@@ -64,7 +64,7 @@ font-3 = "Noto Sans CJK JP:pixelsize=10;1"
 ;============ fonts ============================================
 tray-position = right
 tray-background = ${color.shade}
-modules-left = menu workspaces
+modules-left = menu workspaces xkeyboard
 modules-center = spotify
 modules-right = network date powermenu
 
@@ -107,16 +107,16 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 
 format-prefix = " "
-format-prefix-foreground = ${color.foreground-alt}
-format-prefix-underline = ${color.secondary}
+format-prefix-foreground = ${color.foreground}
+format-prefix-underline = ${color.foreground}
 
-label-layout = %layout%
-label-layout-underline = ${color.secondary}
+; label-layout = %layout%
+; label-layout-underline = ${color.secondary}
 
-; label-indicator-padding = 2
-; label-indicator-margin = 1
-label-indicator-background = ${color.secondary}
-label-indicator-underline = ${color.secondary}
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${color.red}
+label-indicator-underline = ${color.red} 
 
 [module/date]
 type = internal/date
