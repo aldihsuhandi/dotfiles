@@ -1,0 +1,68 @@
+configuration {
+    display-run: " ";
+    display-drun: " ";
+    display-window: "  ";
+    drun-display-format: "{icon} {name}";
+    font: "JetBrainsMono Nerd Font 30";
+    show-icons: false;
+}
+
+@import "colors.rasi"
+
+* {
+    background-color: rgba(242, 233, 236, 100%);
+}
+
+element {
+    padding: 22px 10px 22px 10px;
+    orientation: vertical;
+    text-color: @blue;
+    border-radius: 16;
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color: @white;
+}
+
+entry {
+    background-color: @blue;
+    padding: 12 0 12 3;
+    text-color: @white;
+}
+
+inputbar {
+    children: [prompt, entry];
+    border-radius: 10;
+    enabled: false;
+}
+
+element-text {
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+listview {
+    padding: 0px 0px 0px 0px;
+    dynamic: true;
+}
+
+mainbox {
+    children: [listview];
+    padding: 20;
+    border-radius: 10;
+}
+
+prompt {
+    background-color: @blue;
+    enabled: false;
+    font: "JetBrainsMono Nerd Font 10";
+    padding: 12 0 0 12;
+    text-color: @fg;
+}
+
+window {
+    transparency: "real";
+    background-color: @bg;
+    border-radius: 20;
+}

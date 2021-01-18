@@ -1,6 +1,10 @@
 configuration {
-  display-dmenu: " ";
-  font: "Hack 12";
+  display-run: " ";
+  display-drun: " ";
+  display-window: "  ";
+  drun-display-format: "{icon} {name}";
+  font: "JetBrainsMono Nerd Font 12";
+  show-icons: true;
 }
 
 @import "colors.rasi"
@@ -33,6 +37,11 @@ entry {
 
 inputbar {
   children: [prompt, entry];
+}
+
+listview {
+  columns: 1;
+  lines: 8;
 }
 
 mainbox {

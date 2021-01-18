@@ -1,3 +1,11 @@
-#!/bin/bash
-theme="iceberg"
-rofi -combi-modi drun,window -theme $HOME/.config/rofi/themes/$theme/$theme.rasi -font "JetBrainsMono Nerd Font 12" -show combi -display-combi "Search " -no-fixed-num-lines -yoffset -150
+# !/bin/bash
+themes="iceberg"
+rofi -show drun \
+    -display-drun "Search " \
+    -theme $HOME/.config/rofi/themes/$themes/search.rasi \
+    -lines 3 \
+    -columns 5 \
+    -width 60 \
+    -hide-scrollbar \
+    -icon-theme "Tela Black Dark"
+    

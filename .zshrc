@@ -5,8 +5,8 @@ source $ZSH/oh-my-zsh.sh
 
 # general alias
 alias rm='rm -i'
-alias mv='mv -i'
-alias cp='cp -i'
+# alias mv='mv -i'
+# alias cp='cp -i'
 alias mkdir='mkdir -p'
 alias free='free -h -m'
 alias kernel='uname -r'
@@ -135,6 +135,8 @@ alias weather='curl wttr.in'
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
 # prelaunch command
-ssh-add ssh/github/aldih
+if [ -f ~/.personal_alias ]; then
+    source ~/.personal_alias
+fi
 clear
 eval "$(starship init zsh)"
