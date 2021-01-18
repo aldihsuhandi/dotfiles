@@ -73,8 +73,10 @@ type = custom/text
 content = "  "
 ; background = ${color.blue}
 content-foreground = ${color.foreground}
-click-left = ~/.config/polybar/script/launch
-click-right = ~/.config/polybar/script/launch
+click-left = $HOME/.config/wm\ script/rofi-select/rofi-select.sh
+click-right = $HOME/.config/wm\ script/rofi-select/rofi-select.sh
+; click-left = ~/.config/polybar/script/launch
+; click-right = ~/.config/polybar/script/launch
 
 [module/workspaces]
 type = internal/xworkspaces
@@ -133,8 +135,8 @@ content = 襤
 content-padding = 2
 content-background = ${color.red}
 content-foreground = ${color.foreground}
-click-left = ~/.config/polybar/script/sysmenu
-click-right = ~/.config/polybar/script/sysmenu
+click-left = $HOME/.config/wm\ script/powermenu/powermenu.sh
+click-right = $HOME/.config/wm\ script/powermenu/powermenu.sh
 
 [module/network]
 type = internal/network
