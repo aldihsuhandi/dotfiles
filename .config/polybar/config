@@ -30,18 +30,29 @@
 ; red     = #ff6e67
 
 ; iceberg
-background      =   #aae8e9ec
-foreground      =   #33374c
-foreground-alt  =   #dcdfe7
-alert           =   #cc517a
-shade           =   #262a3f
+; background      =   #aae8e9ec
+; foreground      =   #33374c
+; foreground-alt  =   #dcdfe7
+; alert           =   #cc517a
+; shade           =   #262a3f
 
-acolor          =   #327698
-curgent         =   #cc3768
-coccupied       =   #2d539e
+; acolor          =   #327698
+; curgent         =   #cc3768
+; coccupied       =   #2d539e
 
-red             =   #cc517a
+; red             =   #cc517a
 
+; adapta nokto
+background      =   #263238
+foreground      =   #d3dae3
+foreground-alt  =   #fcfcfc
+alert           =   #ff5555
+shade           =   #4877b1
+
+acolor          =   #222d32
+curgent         =   #e16f7e
+coccupied       =   #a9a9aa
+red             =   #e14245
 
 [bar/mybar]
 ; monitor = ${env:MONITOR}
@@ -140,7 +151,7 @@ click-right = $HOME/.config/wm\ script/powermenu/powermenu.sh
 
 [module/network]
 type = internal/network
-interface = wlo1
+interface = enp34s0
 interval = 1.0
 label-connected = "ﰬ %downspeed%  ﰵ %upspeed%"
 

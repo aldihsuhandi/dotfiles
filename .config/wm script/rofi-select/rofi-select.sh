@@ -1,5 +1,5 @@
 # !/bin/bash
-themes="iceberg"
+themes="adapta"
 rofi -show drun \
     -display-drun "Search " \
     -theme $HOME/.config/rofi/themes/$themes/search.rasi \

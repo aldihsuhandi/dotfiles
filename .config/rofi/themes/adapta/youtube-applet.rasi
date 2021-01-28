@@ -1,0 +1,60 @@
+configuration {
+  display-dmenu: " ";
+  font: "Hack 12";
+}
+
+* {
+  blue: #6272a4;
+  purple: #bd93f9;
+  darkpurple: #8f2be5;
+  fg: #f8f8f2;
+  white: #ffffff;
+
+  bg: #282a36;
+  bg-alt: #44475a;
+
+  background-color: @bg;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element {
+  padding: 12;
+  orientation: vertical;
+  text-color: @blue;
+}
+
+element selected {
+  background-color: @bg-alt;
+  text-color: @white;
+}
+
+entry {
+  background-color: @blue;
+  padding: 12 0 12 3;
+  text-color: @white;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+prompt {
+  background-color: @blue;
+  enabled: true;
+  font: "JetBrainsMono Nerd Font 12";
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+}
+

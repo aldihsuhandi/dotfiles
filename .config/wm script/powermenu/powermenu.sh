@@ -1,5 +1,5 @@
 # !/bin/bash
-themes="iceberg"
+themes="adapta"
 wm=$GDMSESSION
 # echo $wm
 menu=$(rofi -dmenu \

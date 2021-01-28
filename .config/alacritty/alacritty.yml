@@ -10,7 +10,8 @@ window:
 scrolling:
   history: 10000
   multiplier: 2
-background_opacity: 0.95
+background_opacity: 0.90
+# background_opacity: 1
 
 # font configuration
 font:
@@ -126,6 +127,22 @@ schemes:
       cyan:    '#56b6c2'
       white:   '#abb2bf'
   
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
     # Bright colors
     bright:
       black:   '#5c6370'
@@ -273,7 +290,35 @@ schemes:
       cyan:    '#1b668f'
       white:   '#63686d'
 
-colors: *iceberg
+  AdaptaNokto: &AdaptaNokto
+    # Default colors
+    primary:
+      background: '#263238'
+      foreground: '#d3dae3'
+  
+    # Normal colors
+    normal:
+      black:   '#222d32'
+      red:     '#e14245'
+      green:   '#5ca75b'
+      yellow:  '#f6ab32'
+      blue:    '#4877b1'
+      magenta: '#a660c3'
+      cyan:    '#00bcd4'
+      white:   '#a9a9aa'
+  
+    # Bright colors
+    bright:
+      black:   '#556064'
+      red:     '#e16f7e'
+      green:   '#add488'
+      yellow:  '#fdc05f'
+      blue:    '#8ca9bf'
+      magenta: '#e2afec'
+      cyan:    '#73c5e2'
+      white:   '#fcfcfc'
+
+colors: *AdaptaNokto
 
 # cursor
 cursor:

@@ -157,6 +157,12 @@ XF86AudioPlay
 XF86AudioStop
     playerctl stop
 
+# brightness control
+XF86MonBrightnessUp
+    brightnessctl set 5%+
+XF86MonBrightnessDown
+    brightnessctl set 5%-
+
 # printscreen shortcut
 @Print
     spectacle
