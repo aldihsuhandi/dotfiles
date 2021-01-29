@@ -74,8 +74,8 @@ filetype plugin on
 
 " Color Scheme
 let g:gruvbox_italic = 1
-colorscheme PaperColor
-set background=light
+colorscheme dracula
+set background=dark
 hi Comment cterm=italic
 let g:onedark_termcolors = 1
 set termguicolors

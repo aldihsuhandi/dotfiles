@@ -1,6 +1,6 @@
 # !/bin/bash
-\cp .config ~/.config -drf
-\cp .zshrc ~/.zshrg
-\cp .bashrc ~/.bashrc
-\cp .vimrc ~/.vimrc
-\cp .fonts ~/.fonts -drf
+\cp .config ~ -drf
+\cp .zshrc ~
+\cp .bashrc ~
+\cp .vimrc ~
+\cp .fonts ~ -drf
