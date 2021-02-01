@@ -7,6 +7,7 @@ source $ZSH/oh-my-zsh.sh
 alias rm='rm -i'
 # alias mv='mv -i'
 # alias cp='cp -i'
+alias cat='bat'
 alias mkdir='mkdir -p'
 alias free='free -h -m'
 alias kernel='uname -r'
