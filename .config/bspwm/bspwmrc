@@ -3,7 +3,7 @@
 ## autostart
 lxqt-session &
 lxqt-powermanagement &
-lxqt-notificationd &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
 lxqt-policykit-agent &
 picom --experimental-backend &
 blueman-applet &
@@ -54,4 +54,3 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Nitrogen state=floating
 bspc rule -a Kvantum\ Manager state=floating
 bspc rule -a Volume\ Control state=floating
-bspc rule -a lxqt-notificationd layer=above
