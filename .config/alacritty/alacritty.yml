@@ -5,12 +5,12 @@ window:
     lines: 30
   decorations: full
   padding:
-    x: 3
-    y: 1
+    x: 20
+    y: 20
 scrolling:
   history: 10000
   multiplier: 2
-background_opacity: 0.90
+background_opacity: 0.95
 # background_opacity: 1
 
 # font configuration
@@ -322,7 +322,7 @@ colors: *AdaptaNokto
 
 # cursor
 cursor:
-  style: Underline
+  style: Block
   vi_mode_style: Block
   unfocused_hollow: false
 

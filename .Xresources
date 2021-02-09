@@ -1,0 +1,59 @@
+!! Colorscheme
+URxvt.background: [95]#263238
+URxvt.foreground: #d3dae3
+URxvt.color0: #222d32
+URxvt.color1: #e14245
+URxvt.color2: #5ca75b
+URxvt.color3: #f6ab32
+URxvt.color4: #4877b1
+URxvt.color5: #a660c3
+URxvt.color6: #00bcd4
+URxvt.color7: #a9a9aa
+URxvt.color8: #556064
+URxvt.color9: #e16f7e
+URxvt.color10: #add488
+URxvt.color11: #fdc05f
+URxvt.color12: #8ca9bf
+URxvt.color13: #e2afec
+URxvt.color14: #73c5e2
+URxvt.color15: #fcfcfc
+
+!! URxvt config
+URxvt.imLocale: en_US.UTF-8
+URxvt*termName: rxvt-unicode-256color
+URxvt.font: xft:JetBrainsMono Nerd Font:size=11, \
+            xft:Noto Sans CJK JP:size=11, \
+            xft:Noto Color Emoji:size=11
+! URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 140x30
+URxvt.internalBorder: 12
+URxvt.cursorBlink: false
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 32
+
+!! Font settings
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+!! Extension
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 1

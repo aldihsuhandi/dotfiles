@@ -7,15 +7,15 @@ source $ZSH/oh-my-zsh.sh
 alias rm='rm -i'
 # alias mv='mv -i'
 # alias cp='cp -i'
-alias cat='bat'
+# alias cat='bat'
 alias mkdir='mkdir -p'
 alias free='free -h -m'
 alias kernel='uname -r'
 alias cl='clear'
 alias claer='clear'
 alias v='vim'
-alias sv='EDITOR=vim sudoedit'
-alias svim='EDITOR=vim sudoedit'
+alias sv='sudoedit'
+alias svim='sudoedit'
 alias grep='rg'
 alias df='df -h'
 
@@ -123,7 +123,7 @@ alias l="ls"
 alias s="ls"
 
 # devour alias
-alias eog="devour eog"
+alias gwenview="devour gwenview"
 alias celluloid="devour celluloid"
 alias mpv="devour mpv"
 alias okular="devour okular"

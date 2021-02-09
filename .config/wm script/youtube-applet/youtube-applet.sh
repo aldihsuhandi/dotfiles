@@ -13,4 +13,4 @@ then
     exit
 fi
 echo $(echo $play | cut -d ' ' -f1)
-celluloid "https://youtu.be/$(echo $play | cut -d ' ' -f1)"
+mpv "https://youtu.be/$(echo $play | cut -d ' ' -f1)"

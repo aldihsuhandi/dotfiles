@@ -43,7 +43,7 @@
 ; red             =   #cc517a
 
 ; adapta nokto
-background      =   #263238
+background      =   #e6263238
 foreground      =   #d3dae3
 foreground-alt  =   #fcfcfc
 alert           =   #ff5555
@@ -71,7 +71,7 @@ module-margin-right = 1
 font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
 font-1 = "Fantasque Sans Mono:pixelsize=10;3"
 font-2 = "Iosevka Nerd Font:pixelsize=10;3"
-font-3 = "Noto Sans CJK JP:pixelsize=10;1"
+font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
 ;============ fonts ============================================
 tray-position = right
 tray-background = ${color.shade}
