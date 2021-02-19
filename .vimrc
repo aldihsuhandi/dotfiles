@@ -34,6 +34,7 @@ Plugin 'liuchengxu/space-vim-dark'
 Plugin 'fmoralesc/molokayo'
 Plugin 'netsgnut/arctheme.vim'
 Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'arcticicestudio/nord-vim'
 
 call vundle#end()   
 filetype plugin indent on
@@ -74,7 +75,7 @@ filetype plugin on
 
 " Color Scheme
 let g:gruvbox_italic = 1
-colorscheme onedark
+colorscheme dracula
 set background=dark
 hi Comment cterm=italic
 let g:onedark_termcolors = 1
@@ -127,6 +128,6 @@ nmap  <plug>NERDCommenterToggle
 " Automatically closing braces
 inoremap {<CR> {<CR>}<Esc>ko
 
-" Alacritty fix
+" Alaonedark
 set ttymouse=sgr
 hi Normal guibg=NONE ctermbg=NONE

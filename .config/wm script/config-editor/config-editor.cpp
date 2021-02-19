@@ -61,7 +61,7 @@ int main()
     if(config_path.find((std::string)output) != config_path.end())
     {
         std::string output_path = config_path[(std::string)output];
-        cmd = "kitty -e vim " + output_path;
+        cmd = "kitty -e nvim " + output_path;
         system(cmd.c_str());
         // printf("%s\n", output_path.c_str());
     }

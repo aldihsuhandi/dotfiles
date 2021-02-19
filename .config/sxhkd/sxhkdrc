@@ -4,7 +4,7 @@
 
 # terminal emulator
 alt + Return
-	alacritty
+    alacritty
 
 alt + shift + Return
     kitty
@@ -23,7 +23,7 @@ super + shift + c
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+	pkill -USR1 -x sxhkd;notify-send "sxhkd" "reloading config"
 
 #
 # bspwm hotkeys
@@ -170,5 +170,9 @@ shift + @Print
     $HOME/.config/wm\ script/screenshot-select/screenshot-select.sh
 
 # rotate
+## rotate entire screen
 super + shift + r
     bspc node @/ -R 90
+## rotate selected window
+ctrl + shift + r
+    bspc node -R 90

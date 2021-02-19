@@ -1,5 +1,5 @@
 # !/bin/bash
-themes="adapta"
+themes="dracula"
 rofi -show drun \
     -display-drun "Search " \
     -theme $HOME/.config/rofi/themes/$themes/search.rasi \
