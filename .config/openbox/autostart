@@ -17,16 +17,12 @@
 #xfce-mcs-manager &
 
 tint2 &
-# polybar mybar &
 lxqt-session &
 lxqt-powermanagement &
-lxqt-notificationd &
 lxqt-policykit-agent &
-picom &
-plank &
-xcape -e 'Super_L=Control_L|F2' &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+picom --experimental-backend &
 opensnap &
-nemo-desktop &
 blueman-applet &
 kmix &
 kdeconnect-indicator &

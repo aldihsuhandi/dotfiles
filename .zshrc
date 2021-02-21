@@ -5,14 +5,12 @@ source $ZSH/oh-my-zsh.sh
 
 # general alias
 alias rm='rm -i'
-# alias mv='mv -i'
-# alias cp='cp -i'
-# alias cat='bat'
 alias mkdir='mkdir -p'
 alias free='free -h -m'
 alias kernel='uname -r'
 alias cl='clear'
 alias claer='clear'
+alias vim='nvim'
 alias v='vim'
 alias sv='sudoedit'
 alias svim='sudoedit'

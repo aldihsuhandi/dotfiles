@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Raven-Cyan</name>
+    <name>openbox-dracula</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -313,14 +313,14 @@
       </action>
     </keybind>
     <keybind key="W-S-c">
-        <action name="Execute">
-            <command>~/.config/wm\ script/config-editor/config-editor</command>
-        </action>
+      <action name="Execute">
+        <command>~/.config/wm\ script/config-editor/config-editor</command>
+      </action>
     </keybind>
     <keybind key="W-S-v">
-        <action name="Execute">
-            <command>~/.config/wm\ script/youtube-applet/youtube-applet.sh</command>
-        </action>
+      <action name="Execute">
+        <command>~/.config/wm\ script/youtube-applet/youtube-applet.sh</command>
+      </action>
     </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="W-l">
@@ -453,11 +453,6 @@
     <keybind key="A-Return">
       <action name="Execute">
         <command>alacritty</command>
-      </action>
-    </keybind>
-    <keybind key="C-F2">
-      <action name="Execute">
-        <command>~/.config/tint2/script/./launch</command>
       </action>
     </keybind>
     <keybind key="W-Left">

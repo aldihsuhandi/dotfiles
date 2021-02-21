@@ -1,0 +1,54 @@
+# Decorator
+## active window
+window.active.title.bg                  : flat solid
+window.active.title.bg.color            : #1e1f29
+window.active.border.color              : #f8f8f2
+
+## inactive window
+window.inactive.title.bg                : flat solid
+window.inactive.title.bg.color          : #1e1f29
+window.active.border.color              : #1e1e1e
+window.*.label.text.color               : #d8dee8
+window.*.button.*.image.color           : #d8dee8
+
+# Borders
+window.handle.width                     : 0
+window.client.padding.width             : 0
+border.width                            : 3
+
+# Title
+padding.width                           : 10
+padding.height                          : 8
+window.*.title.bg                       : Solid Flat
+window.*.*.bg                           : Parentrelative
+window.label.text.justify               : center
+
+# Menu
+menu.border.width                       : 6
+menu.separator.width                    : 2
+menu.separator.padding.width            : 10
+menu.separator.padding.height           : 2
+menu.overlap.x                          : -8
+menu.*.bg                               : flat solid
+menu.*.bg.color                         : #282A36
+menu.*.color                            : #2f343f
+menu.title.text.color                   : #ffffff
+menu.items.text.color                   : #d8dee8
+menu.items.active.disabled.text.color   : #707070
+menu.items.active.text.color            : #d8dee8
+menu.title.text.justify                 : center
+menu.items.active.bg.color: #5294e2
+
+# OSD
+osd.border.width                        : 3
+osd.border.color                        : #1e1e1e
+osd.bg                                  : flat solid
+osd.bg.color                            : #282A36
+osd.label.bg                            : flat solid
+osd.label.bg.color                      : #282A36
+osd.hilight.bg                          : flat solid
+osd.hilight.bg.color                    : #bd93f9
+
+# Colour Trick
+window.active.button.close.unpressed.image.color: #ef6b7b
+window.inactive.button.close.unpressed.image.color: #bf616a
