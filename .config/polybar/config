@@ -27,6 +27,7 @@ acolor          = #ECEFF4
 curgent         = #BF616A
 coccupied       = #5E81AC
 red             = #ff6e67
+black           = #000000
 
 ; iceberg
 ; background      =   #aae8e9ec
@@ -62,7 +63,33 @@ red             = #ff6e67
 ; red             =   #e14245
 
 
-[bar/mybar]
+
+[bar/i3Bar]
+; monitor = ${env:MONITOR}
+wm-restack = i3
+override-redirect = true
+width = 100%
+height = 30
+radius = 0
+fixed-center = true
+bottom = true
+background = ${color.background}
+foreground = ${color.foreground}
+module-margin-left = 1
+module-margin-right = 1
+;============ fonts ============================================
+font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
+font-1 = "Fantasque Sans Mono:pixelsize=10;3"
+font-2 = "Iosevka Nerd Font:pixelsize=10;3"
+font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
+;============ fonts ============================================
+tray-position = right
+tray-background = ${color.shade}
+modules-left = menu i3workspaces xkeyboard
+modules-center = spotify
+modules-right = network date powermenu
+
+[bar/BSPWMbar]
 ; monitor = ${env:MONITOR}
 wm-restack = bspwm
 override-redirect = true
@@ -93,6 +120,37 @@ content = "  "
 content-foreground = ${color.foreground}
 click-left = $HOME/.config/wm\ script/rofi-select/rofi-select.sh
 click-right = $HOME/.config/wm\ script/rofi-select/rofi-select.sh
+
+[module/i3workspaces]
+type = internal/xworkspaces
+pin-workspaces = false
+enable-click = true
+enable-scroll = true
+format-padding = 1
+
+icon-default = 
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+
+format = <label-state>
+format-background = ${color.shade}
+label-active = %icon% %name%
+label-occupied = %icon% %name%
+label-urgent = %icon% %name%
+label-empty = %icon% %name%
+
+label-empty-padding = 1
+label-active-padding = 1
+label-urgent-padding = 1
+label-occupied-padding = 1
+
+label-empty-foreground = ${color.foreground-alt}
+label-active-foreground = ${color.acolor}
+label-urgent-foreground = ${color.curgent}
+label-occupied-foreground = ${color.black}
 
 [module/workspaces]
 type = internal/xworkspaces
