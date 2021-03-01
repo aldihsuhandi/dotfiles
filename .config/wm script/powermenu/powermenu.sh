@@ -18,7 +18,7 @@ case "$menu" in
     ) if [ $wm == 'bspwm' ]; then
             bspc quit
        else
-            opebox --exit
+            openbox --exit
        fi;;
     ) lxqt-leave --reboot;;
     ) lxqt-leave --shutdown;;

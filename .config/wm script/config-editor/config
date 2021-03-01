@@ -12,3 +12,4 @@ polybar $HOME/.config/polybar/config
 kitty $HOME/.config/kitty/kitty.conf
 xresources $HOME/.Xresources
 neovim $HOME/.config/nvim/init.vim
+qtile $HOME/.config/qtile/config.py

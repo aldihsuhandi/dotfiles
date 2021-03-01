@@ -22,6 +22,10 @@ alias htop='bashtop'
 alias grep='rg'
 alias df='df -h'
 
+# EXPORT
+export MANPAGER="nvim -c 'set ft=man' -"
+export EDITOR="nvim"
+
 # extraction command
 extract ()
 {

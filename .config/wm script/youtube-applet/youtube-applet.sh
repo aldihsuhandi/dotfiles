@@ -1,5 +1,5 @@
 #!/bin/bash
-theme="nordic"
+theme="dracula"
 query=$(rofi -dmenu -location 7 -width 20 -window-title "Search:  " -lines 0 -hide-scrollbar -theme $HOME/.config/rofi/themes/$theme/side-applet.rasi)
 if [ -z "$query" ]
 then

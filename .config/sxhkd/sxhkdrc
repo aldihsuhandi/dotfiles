@@ -4,10 +4,10 @@
 
 # terminal emulator
 alt + Return
-    alacritty
+    kitty
 
 alt + shift + Return
-    kitty
+    alacritty
 
 # program launcher
 super + @space
@@ -35,6 +35,8 @@ super + alt + {q,r}
 
 # close and kill
 super + shift + q
+    bspc node -c
+alt + F4
     bspc node -c
 
 # alternate between the tiled and monocle layout

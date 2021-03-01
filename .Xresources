@@ -1,22 +1,63 @@
 !! Colorscheme
-URxvt.background: [95]#263238
-URxvt.foreground: #d3dae3
-URxvt.color0: #222d32
-URxvt.color1: #e14245
-URxvt.color2: #5ca75b
-URxvt.color3: #f6ab32
-URxvt.color4: #4877b1
-URxvt.color5: #a660c3
-URxvt.color6: #00bcd4
-URxvt.color7: #a9a9aa
-URxvt.color8: #556064
-URxvt.color9: #e16f7e
-URxvt.color10: #add488
-URxvt.color11: #fdc05f
-URxvt.color12: #8ca9bf
-URxvt.color13: #e2afec
-URxvt.color14: #73c5e2
-URxvt.color15: #fcfcfc
+! AdaptaNokto
+! URxvt.background: [95]#263238
+! URxvt.foreground: #d3dae3
+! URxvt.color0: #222d32
+! URxvt.color1: #e14245
+! URxvt.color2: #5ca75b
+! URxvt.color3: #f6ab32
+! URxvt.color4: #4877b1
+! URxvt.color5: #a660c3
+! URxvt.color6: #00bcd4
+! URxvt.color7: #a9a9aa
+! URxvt.color8: #556064
+! URxvt.color9: #e16f7e
+! URxvt.color10: #add488
+! URxvt.color11: #fdc05f
+! URxvt.color12: #8ca9bf
+! URxvt.color13: #e2afec
+! URxvt.color14: #73c5e2
+! URxvt.color15: #fcfcfc
+
+! Dracula
+URxvt.background :            [95]#1e1f29
+URxvt.foreground :            #f8f8f2
+URxvt.color0     :            #000000
+URxvt.color1     :            #ff5555
+URxvt.color2     :            #50fa7b
+URxvt.color3     :            #f1fa8c
+URxvt.color4     :            #caa9fa
+URxvt.color5     :            #ff79c6
+URxvt.color6     :            #8be9fd
+URxvt.color7     :            #bfbfbf
+URxvt.color8     :            #575b70
+URxvt.color9     :            #ff6e67
+URxvt.color10    :            #5af78e
+URxvt.color11    :            #f4f99d
+URxvt.color12    :            #caa9fa
+URxvt.color13    :            #ff92d0
+URxvt.color14    :            #9aedfe
+URxvt.color15    :            #e6e6e6
+
+! Nord
+! xRxvt.background :              [95]#2e3440
+! URxvt.foreground :              #d8dee9
+! URxvt.color0     :              #3b4252
+! URxvt.color1     :              #bf616a
+! URxvt.color2     :              #a3be8c
+! URxvt.color3     :              #ebcb8b
+! URxvt.color4     :              #81a1c1
+! URxvt.color5     :              #b48ead
+! URxvt.color6     :              #88c0d0
+! URxvt.color7     :              #e5e9f0
+! URxvt.color8     :              #4c566a
+! URxvt.color9     :              #bf616a
+! URxvt.color10    :              #a3be8c
+! URxvt.color11    :              #ebcb8b
+! URxvt.color12    :              #81a1c1
+! URxvt.color13    :              #b48ead
+! URxvt.color14    :              #8fbcbb
+! URxvt.color15    :              #eceff4
 
 !! URxvt config
 URxvt.imLocale: en_US.UTF-8

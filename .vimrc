@@ -67,9 +67,6 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_section_b = ''
 let g:airline_section_y = ''
 let g:airline_section_z = ''
-" let g:airline_theme = 'atomic'
-" let g:airline_section_b = '%{strftime("%c")}'
-" let g:airline_section_y = 'BN: %{bufnr("%")}'
 
 filetype plugin on
 
@@ -128,6 +125,6 @@ nmap  <plug>NERDCommenterToggle
 " Automatically closing braces
 inoremap {<CR> {<CR>}<Esc>ko
 
-" Alaonedark
+" Alacritty fix
 set ttymouse=sgr
 hi Normal guibg=NONE ctermbg=NONE
