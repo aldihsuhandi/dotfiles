@@ -51,6 +51,9 @@
             <item label="Lutris"> <action name="Execute">
                 <execute>lutris</execute>
             </action> </item>
+            <item label="Steam (Runtime)"> <action name="Execute">
+                <execute>steam-runtime</execute>
+            </action> </item>
         </menu>
         <menu id="6" label="Graphics">
             <item label="Gwenview"> <action name="Execute">
@@ -137,9 +140,6 @@
             </action> </item>
             <item label="qBittorrent"> <action name="Execute">
                 <execute>qbittorrent</execute>
-            </action> </item>
-            <item label="Steam (Runtime)"> <action name="Execute">
-                <execute>steam-runtime</execute>
             </action> </item>
             <item label="Zoom"> <action name="Execute">
                 <execute>zoom</execute>
