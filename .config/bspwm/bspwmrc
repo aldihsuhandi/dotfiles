@@ -3,7 +3,7 @@
 ## autostart
 lxqt-session &
 lxqt-powermanagement &
-/usr/lib/xfce4/notifyd/xfce4-notifyd &
+dunst &
 lxqt-policykit-agent &
 picom --experimental-backend &
 blueman-applet &

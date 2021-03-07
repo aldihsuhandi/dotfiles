@@ -20,7 +20,7 @@ tint2 &
 lxqt-session &
 lxqt-powermanagement &
 lxqt-policykit-agent &
-/usr/lib/xfce4/notifyd/xfce4-notifyd &
+dunst &
 picom --experimental-backend &
 opensnap &
 blueman-applet &
