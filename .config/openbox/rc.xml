@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>openbox-dracula</name>
-    <titleLayout>NLIMC</titleLayout>
+    <titleLayout>DLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -310,6 +310,11 @@
     <keybind key="W-space">
       <action name="Execute">
         <command>~/.config/wm\ script/rofi-select/rofi-select.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-q">
+      <action name="Execute">
+        <command>openbox --exit</command>
       </action>
     </keybind>
     <keybind key="W-S-c">

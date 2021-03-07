@@ -16,8 +16,7 @@
 #
 #xfce-mcs-manager &
 
-# tint2 &
-xfce4-panel &
+tint2 &
 lxqt-session &
 lxqt-powermanagement &
 lxqt-policykit-agent &
