@@ -1,0 +1,13 @@
+pac, a better syntax for pacman and yay
+Usage:
+    pac <operation>
+    
+Operations:
+    pac install [package(s)]
+    pac uninstall [package(s)]
+    pac purge [package(s)]
+    pac update
+    pac refresh --- (refreshing mirrors)
+    pac clear cache --- (clearing cache package(s))
+    pac clear orphans --- (removing orpahned package(s))
+    pac search <option> [package]
