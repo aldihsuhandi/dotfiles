@@ -1,0 +1,62 @@
+configuration {
+  display-run: " ";
+  display-drun: " ";
+  display-window: "  ";
+  drun-display-format: "{icon} {name}";
+  font: "Hack 12";
+  show-icons: true;
+}
+
+@import "colors.rasi"
+
+* {
+  background-color: @bg;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element {
+  padding: 12;
+  orientation: vertical;
+  text-color: @blue;
+}
+
+element selected {
+  background-color: @bg-alt;
+  text-color: @white;
+}
+
+entry {
+  background-color: @blue;
+  padding: 12 0 12 3;
+  text-color: @white;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+listview {
+  columns: 1;
+  lines: 8;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+prompt {
+  background-color: @blue;
+  enabled: true;
+  font: "JetBrainsMono Nerd Font 12";
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+}
+
