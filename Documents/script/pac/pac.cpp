@@ -10,18 +10,7 @@ void print_usage()
 void search_package(std::vector<std::string> args)
 {
     if(args.size() == 1)
-        system("echo \"Incomplete command\"");
-    else if(args[1] == "installed")
-    {
-        if(args.size() == 2)
-            system("echo \"Incomplete command\"");
-        else
-        {
-            std::string cmd;
-            cmd = "paru -Qs " + args[2];
-            system(cmd.c_str());
-        }
-    }
+        puts("Incomplete command");
     else
     {
         std::string cmd;
@@ -30,10 +19,22 @@ void search_package(std::vector<std::string> args)
     }
 }
 
+void list_package(std::vector<std::string> args)
+{
+    if(args.size() == 1)
+        puts("Incomplete command");
+    else
+    {
+        std::string cmd;
+        cmd = "paru -Qs " + args[1];
+        system(cmd.c_str());
+    }
+}
+
 void install_package(std::vector<std::string> args)
 {
     if((int)args.size() == 1)
-        system("echo \"Incomplete command\"");
+        puts("Incomplete command");
     else
     {
         std::string cmd;
@@ -47,7 +48,7 @@ void install_package(std::vector<std::string> args)
 void uninstall_package(std::vector<std::string> args)
 {
     if((int)args.size() == 1)
-        system("echo \"Incomplete command\"");
+        puts("Incomplete command");
     else
     {
         std::string cmd;
@@ -64,7 +65,20 @@ void purge_package(std::vector<std::string> args)
         puts("Incomplete command");
     else{
         std::string cmd;
-        cmd = "paru -Rcs";
+        cmd = "paru -Rcns";
+        for(int i = 1;i < (int)args.size();++i)
+            cmd += " " + args[i];
+        system(cmd.c_str());
+    }
+}
+
+void downgrade_package(std::vector<std::string> args)
+{
+    if((int)args.size() == 1)
+        puts("Incomplete command");
+    else
+    {
+        std::string cmd = "sudo downgrade";
         for(int i = 1;i < (int)args.size();++i)
             cmd += " " + args[i];
         system(cmd.c_str());
@@ -123,13 +137,17 @@ int main(int argc, char **argv)
             purge_package(args);
         else if(args[0] == "search")
             search_package(args);
+        else if(args[0] == "list")
+            list_package(args);
         else if(args[0] == "update")
             update();
+        else if(args[0] == "downgrade")
+            downgrade_package(args);
         else if(args[0] == "refresh")
             refresh();
         else if(args[0] == "clear")
             cl(args);
         else
-            system("echo \"Unknown Command\"");
+            puts("Unknown command");
     }
 }

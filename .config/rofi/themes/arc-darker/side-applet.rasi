@@ -10,7 +10,7 @@ configuration {
 @import "colors.rasi"
 
 * {
-    background-color: @t;
+    background-color: @bg;
 }
 
 element {

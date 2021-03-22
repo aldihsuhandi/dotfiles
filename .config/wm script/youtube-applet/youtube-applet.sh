@@ -1,5 +1,5 @@
 #!/bin/bash
-theme="dracula"
+theme="$(cat ~/.config/rofi/colorscheme)"
 query=$(rofi -dmenu -location 7 -width 20 -window-title "Search:  " -lines 0 -hide-scrollbar -theme $HOME/.config/rofi/themes/$theme/side-applet.rasi)
 if [ -z "$query" ]
 then
@@ -13,4 +13,4 @@ then
     exit
 fi
 echo $(echo $play | cut -d ' ' -f1)
-mpv "https://youtu.be/$(echo $play | cut -d ' ' -f1)"
+celluloid "https://youtu.be/$(echo $play | cut -d ' ' -f1)"

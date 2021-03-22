@@ -13,3 +13,6 @@ kitty $HOME/.config/kitty/kitty.conf
 xresources $HOME/.Xresources
 neovim $HOME/.config/nvim/init.vim
 qtile $HOME/.config/qtile/config.py
+i3 $HOME/.config/i3/config
+dunst $HOME/.config/dunst/dunstrc
+tint2 $HOME/.config/tint2/tint2rc

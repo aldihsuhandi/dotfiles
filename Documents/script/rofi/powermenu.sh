@@ -1,7 +1,7 @@
 # !/bin/bash
-themes="$(cat ~/.config/rofi/colorscheme)"
+themes="iceberg"
 wm=$GDMSESSION
-# echo $wm
+echo $wm
 menu=$(rofi -dmenu \
     -sep " " \
     <<< "    " \
@@ -14,12 +14,12 @@ menu=$(rofi -dmenu \
     -theme $HOME/.config/rofi/themes/$themes/powermenu.rasi)
 
 case "$menu" in
-    ) lxqt-leave --locksreen;;
+    ) light-locker-command -l;;
     ) if [ $wm == 'bspwm' ]; then
             bspc quit
        else
-            openbox --exit
+            opebox --exit
        fi;;
-    ) lxqt-leave --reboot;;
-    ) lxqt-leave --shutdown;;
+    ) reboot;;
+    ) shutdown now;;
 esac

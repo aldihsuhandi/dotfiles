@@ -1,5 +1,5 @@
 # !/bin/bash
-themes="$(cat ~/.config/rofi/colorscheme)"
+themes="iceberg"
 rofi -show drun \
     -display-drun "Search " \
     -theme $HOME/.config/rofi/themes/$themes/search.rasi \

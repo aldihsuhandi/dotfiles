@@ -1,4 +1,4 @@
-pac, a better syntax for pacman and yay
+pac, a better syntax for pacman and paru
 Usage:
     pac <operation>
     
@@ -6,8 +6,10 @@ Operations:
     pac install [package(s)]
     pac uninstall [package(s)]
     pac purge [package(s)]
+    pac downgrade [package(s)]
     pac update
     pac refresh --- (refreshing mirrors)
     pac clear cache --- (clearing cache package(s))
     pac clear orphans --- (removing orpahned package(s))
-    pac search <option> [package]
+    pac search [package] --- (search package in the official repository and AUR)
+    pac list [package] --- (search installed package)

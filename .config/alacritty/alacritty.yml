@@ -10,8 +10,8 @@ window:
 scrolling:
   history: 10000
   multiplier: 2
-# background_opacity: 0.95
-background_opacity: 1
+background_opacity: 0.9
+# background_opacity: 1
 
 # font configuration
 font:
@@ -274,6 +274,46 @@ schemes:
       cyan:    '#1b668f'
       white:   '#63686d'
 
+
+  arc-darker: &arc-darker
+    # Default colors
+    primary:
+      background: '#d3dae3'
+      foreground: '#383c4a'
+  
+    # Normal colors
+    normal:
+      black:   '#4b5164'
+      red:     '#e14245'
+      green:   '#5ca75b'
+      yellow:  '#f6ab32'
+      blue:    '#4877b1'
+      magenta: '#a660c3'
+      cyan:    '#5294e2'
+      white:   '#a9a9aa'
+  
+    # Bright colors
+    bright:
+      black:   '#616981'
+      red:     '#783228'
+      green:   '#4b7c16'
+      yellow:  '#b65619'
+      blue:    '#2b486b'
+      magenta: '#614a73'
+      cyan:    '#1b668f'
+      white:   '#63686d'
+  
+    # Dim colors (Optional)
+    dim:
+      black:   '#2c2f3a'
+      red:     '#e16f7e'
+      green:   '#add488'
+      yellow:  '#fdc35f'
+      blue:    '#8ca9bf'
+      magenta: '#e2afec'
+      cyan:    '#73c5e2'
+      white:   '#fcfcfc'
+
   AdaptaNokto: &AdaptaNokto
     # Default colors
     primary:
@@ -351,7 +391,7 @@ schemes:
       cyan: '#6d96a5'
       white: '#aeb3bb'
 
-colors: *dracula
+colors: *Nord
 
 # cursor
 cursor:

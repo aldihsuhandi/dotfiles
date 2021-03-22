@@ -18,7 +18,7 @@ std::string file_dir()
 
 std::string get_colorscheme()
 {
-    std::string file_path = file_dir() + "/.config/wm script/config-editor/colorscheme";
+    std::string file_path = file_dir() + "/.config/rofi/colorscheme";
     FILE *file = fopen(file_path.c_str(), "r");
     char colorscheme[1000];
     fscanf(file, "%s", colorscheme);
