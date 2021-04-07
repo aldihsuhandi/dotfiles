@@ -18,27 +18,27 @@
 
 [color]
 ; dracula 
-background      = #1e1f29
-foreground      = #f8f8f2
-foreground-alt  = #f8f8f2
-alert           = #ff5555
-shade           = #6272a4
-acolor          = #ECEFF4
-curgent         = #BF616A
-coccupied       = #5E81AC
-red             = #ff6e67
-black           = #000000
+; background      = #1e1f29
+; foreground      = #f8f8f2
+; foreground-alt  = #f8f8f2
+; alert           = #ff5555
+; shade           = #6272a4
+; acolor          = #ECEFF4
+; curgent         = #BF616A
+; coccupied       = #5E81AC
+; red             = #ff6e67
+; black           = #000000
 
 ; iceberg
-; background      =   #aae8e9ec
-; foreground      =   #33374c
-; foreground-alt  =   #dcdfe7
-; alert           =   #cc517a
-; shade           =   #262a3f
-; acolor          =   #327698
-; curgent         =   #cc3768
-; coccupied       =   #2d539e
-; red             =   #cc517a
+background      =   #aae8e9ec
+foreground      =   #33374c
+foreground-alt  =   #dcdfe7
+alert           =   #cc517a
+shade           =   #262a3f
+acolor          =   #327698
+curgent         =   #cc3768
+coccupied       =   #2d539e
+red             =   #cc517a
 
 ; adapta nokto
 ; background      =   #e6263238

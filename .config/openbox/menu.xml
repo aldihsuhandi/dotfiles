@@ -79,9 +79,6 @@
             <item label="Audacity"> <action name="Execute">
                 <execute>audacity</execute>
             </action> </item>
-            <item label="Audacity"> <action name="Execute">
-                <execute>env UBUNTU_MENUPROXY=0 audacity</execute>
-            </action> </item>
             <item label="Celluloid"> <action name="Execute">
                 <execute>celluloid</execute>
             </action> </item>

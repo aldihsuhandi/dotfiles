@@ -4,10 +4,10 @@
 
 # terminal emulator
 alt + Return
-    kitty
+    konsole
 
 alt + shift + Return
-    alacritty
+    kitty
 
 # program launcher
 super + @space
@@ -20,6 +20,10 @@ super + shift + v
 # config editor
 super + shift + c
     $HOME/.config/wm\ script/config-editor/config-editor
+
+# bookmark applet
+super + shift + x
+    $HOME/.config/wm\ script/bookmark-select/bookmarksApplet
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -36,8 +40,6 @@ super + alt + {q,r}
 # close and kill
 super + shift + q
     bspc node -c
-alt + F4
-    bspc node -c
 
 # alternate between the tiled and monocle layout
 super + m
@@ -48,8 +50,8 @@ super + y
 	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest window
-super + g
-	bspc node -s biggest.window
+# super + g
+#     bspc node -s biggest.window
 
 #
 # state/flags

@@ -3,12 +3,8 @@ configuration {
     display-drun: " ";
     display-window: "  ";
     drun-display-format: "{icon} {name}";
-    font: "JetBrainsMono Nerd Font 12";
-    lines: 3;
-    columns: 5;
-    hide-scrollbar: true;
-    width: 60;
-    show-icons: true;
+    font: "JetBrainsMono Nerd Font 30";
+    show-icons: false;
 }
 
 @import "colors.rasi"
@@ -21,7 +17,7 @@ element {
     padding: 22px 10px 22px 10px;
     orientation: vertical;
     text-color: @blue;
-    border-radius: 16;
+    /* border-radius: 16; */
 }
 
 element selected {
@@ -37,7 +33,8 @@ entry {
 
 inputbar {
     children: [prompt, entry];
-    border-radius: 10;
+    /* border-radius: 10; */
+    enabled: false;
 }
 
 element-text {
@@ -46,20 +43,19 @@ element-text {
 }
 
 listview {
-    padding: 12px 0px 0px 0px;
-    background-color: @bg;
+    padding: 0px 0px 0px 0px;
     dynamic: true;
 }
 
 mainbox {
-    children: [inputbar, listview];
+    children: [listview];
     padding: 20;
-    border-radius: 10;
+    /* border-radius: 10; */
 }
 
 prompt {
     background-color: @blue;
-    enabled: true;
+    enabled: false;
     font: "JetBrainsMono Nerd Font 10";
     padding: 12 0 0 12;
     text-color: @fg;
@@ -67,13 +63,6 @@ prompt {
 
 window {
     transparency: "real";
-    background-color: @t;
-    border-radius: 0;
-    padding: 20.8% 20.8%;
-    fullscreen: true;
-}
-
-element-icon {
-    size: 90px;    
-    margin: 0 10px 0 0;
+    background-color: @bg;
+    /* border-radius: 20; */
 }

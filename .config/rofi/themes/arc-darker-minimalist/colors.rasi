@@ -1,0 +1,11 @@
+* {
+  blue: #383c4a;
+  purple: #e2afec;
+  darkpurple: #a660c3;
+  fg: #d3dae3;
+  white: #fcfcfc;
+
+  bg: rgba(211, 218, 227, 80%);
+  bg-alt: #383c4a;
+  t: rgba(47, 52, 63, 25%);
+}
