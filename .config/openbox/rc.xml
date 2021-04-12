@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>openbox-arc-darker</name>
-    <titleLayout>DLIMC</titleLayout>
+    <name>openbox-nordic</name>
+    <titleLayout>SLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -363,6 +363,7 @@
     <keybind key="A-Tab">
       <action name="NextWindow">
         <dialog>icons</dialog>
+        <bar>no</bar>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -373,6 +374,7 @@
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
         <dialog>icons</dialog>
+        <bar>no</bar>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -484,12 +486,12 @@
     </keybind>
     <keybind key="A-Return">
       <action name="Execute">
-          <command>konsole</command>
+        <command>konsole</command>
       </action>
     </keybind>
     <keybind key="A-S-Return">
       <action name="Execute">
-          <command>kitty</command>
+        <command>kitty</command>
       </action>
     </keybind>
     <keybind key="W-Left">
