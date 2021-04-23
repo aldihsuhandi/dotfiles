@@ -3,7 +3,7 @@
 ## autostart
 lxqt-session &
 lxqt-powermanagement &
-dunst &
+# dunst &
 lxqt-policykit-agent &
 picom --experimental-backend &
 blueman-applet &
@@ -12,8 +12,9 @@ kdeconnect-indicator &
 parcellite &
 nitrogen --restore &
 numlockx &
-xsetroot -cursor_name arrow
-./.config/polybar/BSPWM.sh &
+xsetroot -cursor_name arrow &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+./.config/polybar/launch.sh &
 # sxhkd &
 
 pgrep -x sxhkd > /dev/null || sxhkd &
@@ -23,8 +24,8 @@ bspc monitor -d I II III IV V VI
 ## border config
 bspc config border_width        3
 bspc config window_gap          10
-bspc config top_padding         0
-bspc config bottom_padding      30
+bspc config top_padding         30
+bspc config bottom_padding      0
 bspc config left_padding        0
 bspc config right_padding       0
 

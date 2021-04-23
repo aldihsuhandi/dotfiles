@@ -17,6 +17,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/goyo.vim'
 Plugin 'neoclide/coc.nvim'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'pseewald/vim-anyfold'
 
 " Syntax Highlight
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -61,6 +62,11 @@ set mouse=a
 set laststatus=2
 set splitbelow splitright
 
+" code folding
+let g:anyfold_fold_comments=1
+set foldlevel=0
+hi Folded term=NONE cterm=NONE
+
 " statusline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
@@ -73,7 +79,7 @@ filetype plugin on
 
 " Color Scheme
 let g:gruvbox_italic = 1
-colorscheme nord
+colorscheme dracula
 set background=dark
 hi Comment cterm=italic
 let g:onedark_termcolors = 1
@@ -228,3 +234,5 @@ nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
 nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+" neovide

@@ -18,27 +18,27 @@
 
 [color]
 ; dracula 
-; background      = #1e1f29
-; foreground      = #f8f8f2
-; foreground-alt  = #f8f8f2
-; alert           = #ff5555
-; shade           = #6272a4
-; acolor          = #ECEFF4
-; curgent         = #BF616A
-; coccupied       = #5E81AC
-; red             = #ff6e67
-; black           = #000000
+background      = #1e1f29
+foreground      = #f8f8f2
+foreground-alt  = #f8f8f2
+alert           = #ff5555
+shade           = #6272a4
+acolor          = #ECEFF4
+curgent         = #BF616A
+coccupied       = #5E81AC
+red             = #ff6e67
+black           = #000000
 
 ; iceberg
-background      =   #aae8e9ec
-foreground      =   #33374c
-foreground-alt  =   #dcdfe7
-alert           =   #cc517a
-shade           =   #262a3f
-acolor          =   #327698
-curgent         =   #cc3768
-coccupied       =   #2d539e
-red             =   #cc517a
+; background      =   #aae8e9ec
+; foreground      =   #33374c
+; foreground-alt  =   #dcdfe7
+; alert           =   #cc517a
+; shade           =   #262a3f
+; acolor          =   #327698
+; curgent         =   #cc3768
+; coccupied       =   #2d539e
+; red             =   #cc517a
 
 ; adapta nokto
 ; background      =   #e6263238
@@ -52,7 +52,7 @@ red             =   #cc517a
 ; red             =   #e14245
 
 ; Nordic
-; background      =   #e62e3440
+; background      =   #2e3440
 ; foreground      =   #d8dee9
 ; foreground-alt  =   #eceff4
 ; alert           =   #bf616a
@@ -63,31 +63,6 @@ red             =   #cc517a
 ; red             =   #e14245
 
 
-
-[bar/i3Bar]
-; monitor = ${env:MONITOR}
-wm-restack = i3
-override-redirect = true
-width = 100%
-height = 30
-radius = 0
-fixed-center = true
-bottom = true
-background = ${color.background}
-foreground = ${color.foreground}
-module-margin-left = 1
-module-margin-right = 1
-;============ fonts ============================================
-font-0 = "JetBrainsMonoExtraBold NF:size=10;1"
-font-1 = "Fantasque Sans Mono:pixelsize=10;3"
-font-2 = "Iosevka Nerd Font:pixelsize=10;3"
-font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
-;============ fonts ============================================
-tray-position = right
-tray-background = ${color.shade}
-modules-left = menu i3workspaces xkeyboard
-modules-center = spotify
-modules-right = network date powermenu
 
 [bar/BSPWMbar]
 ; monitor = ${env:MONITOR}
@@ -114,43 +89,81 @@ modules-left = menu workspaces xkeyboard
 modules-center = spotify
 modules-right = network date powermenu
 
+[bar/bar1]
+wm-restack = bspwm
+override-redirect = true
+width = 12%
+offset-x = 3%
+offset-y = 0.3%
+height = 30
+radius = 15
+fixed-center = true
+bottom = false
+background = ${color.background}
+foreground = ${color.foreground}
+module-margin-left = 1
+module-margin-right = 1
+;============ fonts ============================================
+font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
+font-1 = "Fantasque Sans Mono:pixelsize=10;3"
+font-2 = "Iosevka Nerd Font:pixelsize=10;3"
+font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
+;============ fonts ============================================
+modules-left = menu
+modules-center = date
+modules-right = powermenu
+
+[bar/bar2]
+wm-restack = bspwm
+override-redirect = true
+width = 10%
+offset-x = 47%
+offset-y = 0.3%
+height = 30
+radius = 15
+fixed-center = true
+bottom = false
+background = ${color.background}
+foreground = ${color.foreground}
+module-margin-left = 1
+module-margin-right = 1
+;============ fonts ============================================
+font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
+font-1 = "Fantasque Sans Mono:pixelsize=10;3"
+font-2 = "Iosevka Nerd Font:pixelsize=10;3"
+font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
+;============ fonts ============================================
+modules-center = workspaces
+
+[bar/bar3]
+wm-restack = bspwm
+override-redirect = true
+width = 12%
+offset-x = 85%
+offset-y = 0.3%
+height = 30
+radius = 15
+fixed-center = true
+bottom = false
+background = ${color.background}
+foreground = ${color.foreground}
+module-margin-left = 1
+module-margin-right = 1
+;============ fonts ============================================
+font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
+font-1 = "Fantasque Sans Mono:pixelsize=10;3"
+font-2 = "Iosevka Nerd Font:pixelsize=10;3"
+font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
+;============ fonts ============================================
+modules-center = menu
+tray-position = center
+
 [module/menu]
 type = custom/text
 content = "   "
 content-foreground = ${color.foreground}
 click-left = $HOME/.config/wm\ script/rofi-select/rofi-select.sh
 click-right = $HOME/.config/wm\ script/rofi-select/rofi-select.sh
-
-[module/i3workspaces]
-type = internal/xworkspaces
-pin-workspaces = false
-enable-click = true
-enable-scroll = true
-format-padding = 1
-
-icon-default = 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-
-format = <label-state>
-format-background = ${color.shade}
-label-active = %icon% %name%
-label-occupied = %icon% %name%
-label-urgent = %icon% %name%
-label-empty = %icon% %name%
-
-label-empty-padding = 1
-label-active-padding = 1
-label-urgent-padding = 1
-label-occupied-padding = 1
-
-label-empty-foreground = ${color.foreground-alt}
-label-active-foreground = ${color.acolor}
-label-urgent-foreground = ${color.curgent}
-label-occupied-foreground = ${color.black}
 
 [module/workspaces]
 type = internal/xworkspaces
@@ -162,7 +175,7 @@ format-padding = 1
 icon-default = 
 
 format = <label-state>
-format-background = ${color.shade}
+; format-background = ${color.shade}
 label-active = 
 label-occupied = 
 label-urgent = 
@@ -203,7 +216,7 @@ click-right = gsimplecal
 type = custom/text
 content = 襤
 content-padding = 2
-content-background = ${color.red}
+; content-background = ${color.red}
 content-foreground = ${color.foreground}
 click-left = $HOME/.config/wm\ script/powermenu/powermenu.sh
 click-right = $HOME/.config/wm\ script/powermenu/powermenu.sh
