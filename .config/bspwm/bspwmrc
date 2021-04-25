@@ -4,8 +4,9 @@
 lxqt-session &
 lxqt-powermanagement &
 # dunst &
-lxqt-policykit-agent &
+# lxqt-policykit-agent &
 picom --experimental-backend &
+/usr/lib/polkit-kde-authentication-agent-1 &
 blueman-applet &
 kmix &
 kdeconnect-indicator &
