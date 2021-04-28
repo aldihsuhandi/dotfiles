@@ -5,4 +5,5 @@
 \cp .vimrc ~
 \cp .fonts ~ -drf
 \cp .themes ~ -drf
+\cp .mpd ~ -drf
 \cp Documents ~ -drf
