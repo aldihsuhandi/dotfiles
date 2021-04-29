@@ -18,16 +18,16 @@
 
 [color]
 ; dracula 
-background      = #1e1f29
-foreground      = #f8f8f2
-foreground-alt  = #f8f8f2
-alert           = #ff5555
-shade           = #6272a4
-acolor          = #ECEFF4
-curgent         = #BF616A
-coccupied       = #5E81AC
-red             = #ff6e67
-black           = #000000
+; background      = #aa1e1f29
+; foreground      = #f8f8f2
+; foreground-alt  = #f8f8f2
+; alert           = #ff5555
+; shade           = #6272a4
+; acolor          = #ECEFF4
+; curgent         = #BF616A
+; coccupied       = #5E81AC
+; red             = #ff6e67
+; black           = #000000
 
 ; iceberg
 ; background      =   #aae8e9ec
@@ -52,17 +52,15 @@ black           = #000000
 ; red             =   #e14245
 
 ; Nordic
-; background      =   #2e3440
-; foreground      =   #d8dee9
-; foreground-alt  =   #eceff4
-; alert           =   #bf616a
-; shade           =   #68809a
-; acolor          =   #aeb3bb
-; curgent         =   #94545d
-; coccupied       =   #4c566a
-; red             =   #e14245
-
-
+background      =   #2e3440
+foreground      =   #d8dee9
+foreground-alt  =   #eceff4
+alert           =   #bf616a
+shade           =   #68809a
+acolor          =   #aeb3bb
+curgent         =   #94545d
+coccupied       =   #4c566a
+red             =   #e14245
 
 [bar/BSPWMbar]
 ; monitor = ${env:MONITOR}
