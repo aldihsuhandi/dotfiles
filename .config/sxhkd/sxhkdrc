@@ -4,7 +4,7 @@
 
 # terminal emulator
 alt + Return
-    konsole
+    alacritty
 
 alt + shift + Return
     kitty
