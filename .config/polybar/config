@@ -90,7 +90,7 @@ modules-right = network date powermenu
 [bar/bar1]
 wm-restack = bspwm
 override-redirect = true
-width = 12%
+width = 14%
 offset-x = 3%
 offset-y = 0.3%
 height = 30
@@ -136,7 +136,7 @@ modules-center = workspaces
 [bar/bar3]
 wm-restack = bspwm
 override-redirect = true
-width = 12%
+width = 14%
 offset-x = 85%
 offset-y = 0.3%
 height = 30
