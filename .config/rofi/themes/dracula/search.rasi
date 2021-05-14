@@ -50,6 +50,7 @@ listview {
 mainbox {
     children: [inputbar, listview];
     padding: 20;
+    border-radius: 10;
 }
 
 prompt {
@@ -62,8 +63,10 @@ prompt {
 
 window {
     transparency: "real";
-    background-color: @bg;
-    border-radius: 20;
+    background-color: @t;
+    border-radius: 0;
+    padding: 23.0% 20.8%;
+    fullscreen: true;
 }
 
 element-icon {

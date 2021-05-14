@@ -65,7 +65,7 @@ window {
     transparency: "real";
     background-color: @t;
     border-radius: 0;
-    padding: 20.8% 20.8%;
+    padding: 23.0% 20.8%;
     fullscreen: true;
 }
 
