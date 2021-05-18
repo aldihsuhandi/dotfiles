@@ -1,4 +1,6 @@
 export ZSH="/home/aldih/.oh-my-zsh"
+export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
+export ANDROID_SDK_ROOT='/opt/android-sdk'
 ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting ssh-agent)
 source $ZSH/oh-my-zsh.sh
@@ -8,6 +10,7 @@ export MANPAGER="nvim -c 'set ft=man' -"
 export EDITOR="nvim"
 
 # general alias
+alias please="sudo"
 alias rm='rm -i'
 alias mkdir='mkdir -p'
 alias free='free -h -m'
@@ -47,74 +50,11 @@ extract ()
   fi
 }
 
-# Compile command
-compile ()
-{
-    filename=$(echo $1 | cut -f1 -d".")
-    if [ -f $1 ] ; then
-        case $1 in
-            *.cpp)      g++ -o $filename $1 -std=gnu++17 -Wall -Wextra && echo "Compiled with g++";;
-            *.c)        gcc -o $filename $1 -std=c99 -Wall -Wextra -lm && echo "Compiled with gcc";;
-            *.java)     javac $1 && echo "Compiled with javac";;
-            *)          echo "'$1' cannot be compile via compile()" ;;
-        esac
-    else
-        echo "'$1' is not a valid file"
-    fi
-}
-
-
-# powerline 
-# function powerline_precmd() {
-#     PS1="$(powerline-shell --shell zsh $?)"
-# }
-
-# function install_powerline_precmd() {
-#   for s in "${precmd_functions[@]}"; do
-#     if [ "$s" = "powerline_precmd" ]; then
-#       return
-#     fi
-#   done
-#   precmd_functions+=(powerline_precmd)
-# }
-
-# if [ "$TERM" != "linux" ]; then
-#     install_powerline_precmd
-# fi
 
 # autocd
 setopt  autocd autopushd
 autoload -U compinit
 compinit
-
-# coding template
-templatecpp(){
-    cp $HOME/Documents/cpp/template/template.cpp "$1.cpp"
-    vim "$1.cpp"
-}
-
-templatec(){
-    cp $HOME/Documents/c/template/template.c "$1.c"
-    vim $1.c
-}
-
-templatemarkdown(){
-    cp $HOME/Documents/markdown\ template/template.md $1.md
-    vim $1.md
-}
-
-alias tempcpp=templatecpp
-alias tempcppprob=$HOME/Documents/script/tempcppprob/./script
-alias tempc=templatec
-alias tempmark=templatemarkdown
-
-# compiling code shortcut
-run_and_compile_java(){
-    javac "$1".java
-    java "$1"
-}
-
-alias runjava=run_and_compile_java
 
 # alias for ls typo and somefunction
 alias ls="exa -F -s=name --long -S -h --group-directories-first -G"
