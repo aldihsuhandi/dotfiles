@@ -1,0 +1,58 @@
+# Decorator
+## active window
+window.active.title.bg                  : flat solid
+window.active.title.bg.color            : #282c34
+window.active.border.color              : #abb2bf
+
+## inactive window
+window.inactive.title.bg                : flat solid
+window.inactive.title.bg.color          : #282c34
+window.active.border.color              : #282c34
+window.*.label.text.color               : #abb2bf
+window.*.button.*.image.color           : #abb2bf
+
+# Borders
+window.handle.width                     : 0
+window.client.padding.width             : 0
+border.width                            : 3
+
+# Title
+padding.width                           : 10
+padding.height                          : 8
+window.*.title.bg                       : Solid Flat
+window.*.*.bg                           : Parentrelative
+window.label.text.justify               : center
+
+# Menu
+menu.border.width                       : 1
+menu.separator.width                    : 2
+menu.separator.padding.width            : 10
+menu.separator.padding.height           : 2
+menu.overlap.x                          : -8
+menu.*.bg                               : flat solid
+menu.*.bg.color                         : #282c34
+menu.*.color                            : #282c34
+menu.title.text.color                   : #ffffff
+menu.items.text.color                   : #abb2bf
+menu.items.active.disabled.text.color   : #5c6370
+menu.items.active.text.color            : #ffffff
+menu.title.text.justify                 : center
+menu.items.active.bg.color              : #56b6c2
+
+# OSD
+osd.border.width                        : 1
+osd.border.color                        : #131613
+osd.bg                                  : flat solid
+osd.bg.color                            : #282c34
+osd.label.bg                            : flat solid
+osd.label.bg.color                      : #282c34
+osd.hilight.bg                          : flat solid
+osd.hilight.bg.color                    : #61afef
+
+# Colour Trick
+window.*.button.*.image.color           : #56b6c2
+window.active.button.*.unpressed.image.color: #ffffff
+window.inactive.button.*.unpressed.image.color: #abb2bf
+
+window.active.button.close.unpressed.image.color: #e06c75
+window.inactive.button.close.unpressed.image.color: #bf616a
