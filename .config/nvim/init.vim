@@ -17,7 +17,6 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/goyo.vim'
 Plugin 'neoclide/coc.nvim'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'pseewald/vim-anyfold'
 
 " Syntax Highlight
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -25,7 +24,6 @@ Plugin 'vim-python/python-syntax'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'uiiaoo/java-syntax.vim'
 Plugin 'dart-lang/dart-vim-plugin'
-Plugin 'thosakwe/vim-flutter'
 Plugin 'natebosch/vim-lsc'
 Plugin 'natebosch/vim-lsc-dart'
 
@@ -79,7 +77,7 @@ filetype plugin on
 
 " Color Scheme
 let g:gruvbox_italic = 1
-colorscheme dracula
+colorscheme onedark
 set background=dark
 hi Comment cterm=italic
 let g:onedark_termcolors = 1

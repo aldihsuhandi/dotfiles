@@ -4,7 +4,11 @@ configuration {
     display-window: "  ";
     drun-display-format: "{icon} {name}";
     font: "JetBrainsMono Nerd Font 12";
-    show-icons: false;
+    lines: 3;
+    columns: 5;
+    hide-scrollbar: true;
+    width: 60;
+    show-icons: true;
 }
 
 @import "colors.rasi"
@@ -43,6 +47,7 @@ element-text {
 
 listview {
     padding: 12px 0px 0px 0px;
+    background-color: @bg;
     dynamic: true;
 }
 
@@ -63,10 +68,12 @@ prompt {
 window {
     transparency: "real";
     background-color: @t;
-    /* border-radius: 20; */
+    border-radius: 0;
+    padding: 20.8% 20.8%;
+    fullscreen: true;
 }
 
-element-icon{
+element-icon {
     size: 90px;    
     margin: 0 10px 0 0;
 }

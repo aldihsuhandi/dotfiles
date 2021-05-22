@@ -391,7 +391,7 @@ schemes:
       cyan: '#6d96a5'
       white: '#aeb3bb'
 
-colors: *Nord
+colors: *onedark
 
 # cursor
 cursor:

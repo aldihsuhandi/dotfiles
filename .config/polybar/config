@@ -18,7 +18,7 @@
 
 [color]
 ; dracula 
-; background      = #aa1e1f29
+; background      = #1e1f29
 ; foreground      = #f8f8f2
 ; foreground-alt  = #f8f8f2
 ; alert           = #ff5555
@@ -29,16 +29,17 @@
 ; red             = #ff6e67
 ; black           = #000000
 
-; iceberg
-; background      =   #aae8e9ec
-; foreground      =   #33374c
-; foreground-alt  =   #dcdfe7
-; alert           =   #cc517a
-; shade           =   #262a3f
-; acolor          =   #327698
-; curgent         =   #cc3768
-; coccupied       =   #2d539e
-; red             =   #cc517a
+; onedark
+background      = #282c34
+foreground      = #abb2bf
+foreground-alt  = #abb2bf
+alert           = #e06c75
+shade           = #61afef
+acolor          = #ffffff
+curgent         = #e06c75
+coccupied       = #56b6c2
+red             = #e06c75
+black           = #131613
 
 ; adapta nokto
 ; background      =   #e6263238
@@ -52,15 +53,15 @@
 ; red             =   #e14245
 
 ; Nordic
-background      =   #2e3440
-foreground      =   #d8dee9
-foreground-alt  =   #eceff4
-alert           =   #bf616a
-shade           =   #68809a
-acolor          =   #aeb3bb
-curgent         =   #94545d
-coccupied       =   #4c566a
-red             =   #e14245
+; background      =   #2e3440
+; foreground      =   #d8dee9
+; foreground-alt  =   #eceff4
+; alert           =   #bf616a
+; shade           =   #68809a
+; acolor          =   #aeb3bb
+; curgent         =   #94545d
+; coccupied       =   #4c566a
+; red             =   #e14245
 
 [bar/BSPWMbar]
 ; monitor = ${env:MONITOR}
@@ -115,7 +116,7 @@ modules-right = powermenu
 wm-restack = bspwm
 override-redirect = true
 width = 10%
-offset-x = 47%
+offset-x = 45%
 offset-y = 0.3%
 height = 30
 radius = 15
