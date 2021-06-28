@@ -484,14 +484,14 @@
     <keybind key="W-Next">
       <action name="Iconify"/>
     </keybind>
-    <keybind key="A-Return">
-      <action name="Execute">
-        <command>konsole</command>
-      </action>
-    </keybind>
-    <keybind key="A-S-Return">
+    <keybind key="W-Return">
       <action name="Execute">
         <command>alacritty</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-Return">
+      <action name="Execute">
+        <command>konsole</command>
       </action>
     </keybind>
     <keybind key="W-Left">
@@ -523,6 +523,11 @@
     <keybind key="Print">
       <action name="Execute">
         <command>spectacle</command>
+      </action>
+    </keybind>
+    <keybind key="C-Print">
+      <action name="Execute">
+        <command>spectacle -m</command>
       </action>
     </keybind>
     <keybind key="S-Print">

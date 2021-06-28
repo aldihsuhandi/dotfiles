@@ -16,3 +16,4 @@ qtile $HOME/.config/qtile/config.py
 i3 $HOME/.config/i3/config
 dunst $HOME/.config/dunst/dunstrc
 tint2 $HOME/.config/tint2/tint2rc
+fish $HOME/.config/fish/config.fish

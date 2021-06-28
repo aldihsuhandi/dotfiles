@@ -14,7 +14,7 @@ menu=$(rofi -dmenu \
     -theme $HOME/.config/rofi/themes/$themes/powermenu.rasi)
 
 case "$menu" in
-    ) lxqt-leave --locksreen;;
+    ) light-locker-command --lock;;
     ) if [ $wm == 'bspwm' ]; then
             bspc quit
        else
