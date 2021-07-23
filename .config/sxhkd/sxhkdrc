@@ -3,10 +3,10 @@
 #
 
 # terminal emulator
-alt + Return
+super + Return
     alacritty
 
-alt + shift + Return
+super + shift + Return
     kitty
 
 # program launcher
@@ -96,7 +96,7 @@ super + {o,i}
 	bspc wm -h on
 
 # focus or send to the given desktop
-super + {_,shift + }{1-9,0}
+super + {_,shift +}{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 #
@@ -171,7 +171,9 @@ XF86MonBrightnessDown
 @Print
     spectacle
 shift + @Print
-    $HOME/.config/wm\ script/screenshot-select/screenshot-select.sh
+    spectacle --region
+ctrl + @Print
+    spectacle -m
 
 # rotate
 ## rotate entire screen
@@ -180,3 +182,8 @@ super + shift + r
 ## rotate selected window
 ctrl + shift + r
     bspc node -R 90
+
+# workspace
+super + {1-9,0}
+    d='{1-9,10}'; \
+    bspc desktop -f "$d.local" || bspc desktop -s "$d"

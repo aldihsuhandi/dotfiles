@@ -70,7 +70,7 @@ int main()
     
     if(out != "")
     {
-        cmd = "firefox " + out;
+        cmd = "brave " + out;
         system(cmd.c_str());
     }
 

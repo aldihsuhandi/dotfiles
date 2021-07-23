@@ -6,4 +6,4 @@
 \cp .fonts ~ -drf
 \cp .themes ~ -drf
 \cp .mpd ~ -drf
-\cp Documents ~ -drf
+# \cp Documents ~ -drf

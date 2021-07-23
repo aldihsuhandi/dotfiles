@@ -1,68 +1,79 @@
-configuration {
-    display-run: " ";
-    display-drun: " ";
-    display-window: "  ";
-    drun-display-format: "{icon} {name}";
-    font: "JetBrainsMono Nerd Font 10";
-    lines: 6;
-    columns: 1;
-    hide-scrollbar: true;
-    width: 45;
+configuration 
+{
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    font: "JetBrainsMono Nerd Font 12";
 }
 
 @import "colors.rasi"
 
-* {
+window
+{
+    anchor: center;
     background-color: @bg;
-}
-
-element {
-    padding: 22px 10px 22px 10px;
-    orientation: vertical;
-    text-color: @blue;
-}
-
-element selected {
-    background-color: @bg-alt;
-    text-color: @white;
-}
-
-entry {
-    background-color: @blue;
-    padding: 12 0 12 3;
-    text-color: @white;
-}
-
-inputbar {
-    children: [prompt, entry];
-}
-
-element-text {
-    vertical-align: 0.5;
-    horizontal-align: 0.5;
-}
-
-listview {
-    padding: 0px 0px 0px 0px;
-    background-color: @bg;
-    dynamic: true;
-}
-
-mainbox {
-    children: [inputbar, listview];
-    padding: 10;
-}
-
-prompt {
-    background-color: @blue;
-    enabled: true;
-    font: "JetBrainsMono Nerd Font 10";
-    padding: 12 0 0 12;
-    text-color: @fg;
-}
-
-window {
+    width: 50%;
     transparency: "real";
-    background-color: @t;
-    border-radius: 0;
+    border-radius: 5px;
+}
+
+mainbox
+{
+    padding: 1.5%;
+    background-color: inherit;
+}
+
+inputbar
+{
+    background-color: inherit;
+}
+
+prompt
+{
+    padding: 0.8%;
+    opacity: 1;
+    color: @fg-alt;
+    background-color: @bg-alt;
+    font: "JetBrainsMono Nerd Font 14";
+}
+
+entry
+{
+    padding: 1%;
+    placeholder: "Search for applications";
+    placeholder-color: @fg;
+    color: @fg-alt;
+    background-color: @bg-alt;
+}
+
+listview
+{
+    background-color: inherit;
+    lines: 8;
+    fixed-columns: true;
+    padding: 10px 20px 10px 10px;
+}
+
+element
+{
+    backgrond-color: inherit;
+    color: @fg-alt;
+    padding: 1.2% 0%;
+}
+
+element-icon
+{
+    size: 3%;
+    padding: 0 0 0 10px;
+}
+
+element-text
+{
+    padding: 0% 0.7%;
+    vertical-align: 0.5;
+}
+
+element selected
+{
+    background-color: @bg-selected;
+    color: @fg;
 }

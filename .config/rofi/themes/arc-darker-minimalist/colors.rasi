@@ -3,9 +3,11 @@
   purple: #e2afec;
   darkpurple: #a660c3;
   fg: #d3dae3;
+  fg-alt: #2f343f;
   white: #fcfcfc;
 
-  bg: rgba(211, 218, 227, 80%);
-  bg-alt: #383c4a;
+  bg: #fcfcfc;
+  bg-alt: #f5f6f7;
+  bg-selected: #2f343f;
   t: rgba(47, 52, 63, 25%);
 }

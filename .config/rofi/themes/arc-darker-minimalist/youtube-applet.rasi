@@ -1,60 +1,75 @@
-configuration {
-  display-dmenu: " ";
-  font: "Hack 12";
+configuration 
+{
+    font: "JetBrainsMono Nerd Font 12";
 }
 
-* {
-  blue: #6272a4;
-  purple: #bd93f9;
-  darkpurple: #8f2be5;
-  fg: #f8f8f2;
-  white: #ffffff;
+@import "colors.rasi"
 
-  bg: #282a36;
-  bg-alt: #44475a;
-
-  background-color: @bg;
-  
-  border: 0;
-  margin: 0;
-  padding: 0;
-  spacing: 0;
+window
+{
+    background-color: @bg;
+    transparency: "real";
+    border-radius: 5px;
+    height: 100%;
 }
 
-element {
-  padding: 12;
-  orientation: vertical;
-  text-color: @blue;
+mainbox
+{
+    padding: 1.5%;
+    background-color: inherit;
 }
 
-element selected {
-  background-color: @bg-alt;
-  text-color: @white;
+inputbar
+{
+    background-color: inherit;
 }
 
-entry {
-  background-color: @blue;
-  padding: 12 0 12 3;
-  text-color: @white;
+prompt
+{
+    padding: 0.8%;
+    opacity: 1;
+    color: @fg-alt;
+    background-color: @bg-alt;
+    font: "JetBrainsMono Nerd Font 14";
 }
 
-inputbar {
-  children: [prompt, entry];
+entry
+{
+    padding: 1%;
+    placeholder: "Search";
+    placeholder-color: @fg;
+    color: @fg-alt;
+    background-color: @bg-alt;
 }
 
-mainbox {
-  children: [inputbar, listview];
+listview
+{
+    background-color: inherit;
+    fixed-columns: true;
+    padding: 10px 20px 10px 10px;
 }
 
-prompt {
-  background-color: @blue;
-  enabled: true;
-  font: "JetBrainsMono Nerd Font 12";
-  padding: 12 0 0 12;
-  text-color: @fg;
+element
+{
+    backgrond-color: inherit;
+    color: @fg-alt;
+    padding: 1.2% 0%;
 }
 
-window {
-  transparency: "real";
+element-icon
+{
+    size: 3%;
 }
 
+element-text
+{
+    padding: 0% 0.7%;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+element selected
+{
+    background-color: @bg-selected;
+    color: @fg;
+}
