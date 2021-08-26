@@ -1,6 +1,6 @@
 " $HOME/.config/nvim/init.vim
 
-" shortcut
+" General Shortcut
 map <F1> :NERDTreeToggle<CR>
 map <F5> :w! <bar> :term ~/Documents/vim\ script/./compile.sh %<CR>
 map <F8> :w! <bar> :term echo "Insert to IN" && cat > in<CR>
@@ -14,12 +14,12 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-c> :%y+<CR>
 nnoremap <C-w> :wall<CR>
 nnoremap <C-R> :so ~/.config/nvim/init.vim<CR>
-nnoremap <C-Down> :tabNext<CR>
-nnoremap <C-Up> :tabprevious<CR>
 noremap <silent> <A-Left> :vertical resize +3<CR>
 noremap <silent> <A-Right> :vertical resize -3<CR>
 noremap <silent> <A-Up> :resize +3<CR>
 noremap <silent> <A-Down> :resize -3<CR>
+
+" Comment shortcut
 vmap  <plug>NERDCommenterToggle
 nmap  <plug>NERDCommenterToggle
 
@@ -28,3 +28,14 @@ inoremap {<CR> {<CR>}<Esc>ko
 
 " Files searching
 map <C-P> :Files<CR>
+
+" Navigate Between Tab
+nnoremap <C-Down> :tabNext<CR>
+nnoremap <C-Up> :tabprevious<CR>
+
+" Navigate Between Buffer
+nnoremap <C-L> :bp<CR>
+nnoremap <C-H> :bn<CR>
+
+" Disable K
+nnoremap <silent> K <Nop>

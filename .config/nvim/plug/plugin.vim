@@ -35,9 +35,11 @@ Plugin 'ap/vim-css-color'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/goyo.vim'
-Plugin 'neoclide/coc.nvim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'sheerun/vim-polyglot'
+
+" Autocomplete plugin
+Plugin 'neoclide/coc.nvim'
 
 " Syntax Highlight
 Plugin 'octol/vim-cpp-enhanced-highlight'
