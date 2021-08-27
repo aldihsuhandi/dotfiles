@@ -40,6 +40,8 @@ Plugin 'sheerun/vim-polyglot'
 
 " Autocomplete plugin
 Plugin 'neoclide/coc.nvim'
+Plugin 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
+Plugin 'arnaud-lb/vim-php-namespace'
 
 " Syntax Highlight
 Plugin 'octol/vim-cpp-enhanced-highlight'

@@ -34,8 +34,8 @@ nnoremap <C-Down> :tabNext<CR>
 nnoremap <C-Up> :tabprevious<CR>
 
 " Navigate Between Buffer
-nnoremap <C-L> :bp<CR>
-nnoremap <C-H> :bn<CR>
+nnoremap <C-L> :bn<CR>
+nnoremap <C-H> :bp<CR>
 
 " Disable K
 nnoremap <silent> K <Nop>
