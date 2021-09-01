@@ -3,10 +3,8 @@ themes="$(cat ~/.config/rofi/colorscheme)"
 wm=$GDMSESSION
 # echo $wm
 menu=$(rofi -dmenu \
-    -sep " " \
-    <<< "    " \
-    -lines 1 \
-    -columns 4 \
+    -sep "|" \
+    <<< "||||" \
     -tokenize \
     -no-custom \
     -window-title "Search " \

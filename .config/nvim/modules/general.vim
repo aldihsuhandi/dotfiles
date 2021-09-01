@@ -33,6 +33,9 @@ let g:airline_section_z = ''
 
 filetype plugin on
 
+" Syntax Highlighting
+au BufReadPost *.rasi set syntax=css
+
 " Color Scheme
 let g:gruvbox_italic = 1
 colorscheme onedark

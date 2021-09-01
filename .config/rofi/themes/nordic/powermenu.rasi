@@ -1,68 +1,51 @@
 configuration {
-    display-run: " ";
-    display-drun: " ";
-    display-window: "  ";
-    drun-display-format: "{icon} {name}";
     font: "JetBrainsMono Nerd Font 30";
-    show-icons: false;
+    hide-scrollbar: true;
+    show-icons: true;
 }
 
-@import "colors.rasi"
+@import "color.rasi"
 
-* {
-    background-color: @bg;
+window {
+    border-radius: 10px;
+    backgroun-color: @background;
+}
+
+/* search bar */
+inputbar {
+    enabled: false;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* list */
+listview {
+    columns: 4;
+    lines: 1;
 }
 
 element {
     padding: 22px 10px 22px 10px;
     orientation: vertical;
-    text-color: @blue;
-    border-radius: 16;
+    background-color: @background-alt;
+    margin: 10px;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    border-radius: 10px;
 }
 
 element selected {
-    background-color: @bg-alt;
-    text-color: @white;
-}
-
-entry {
-    background-color: @blue;
-    padding: 12 0 12 3;
-    text-color: @white;
-}
-
-inputbar {
-    children: [prompt, entry];
-    border-radius: 10;
-    enabled: false;
+    background-color: @background;
+    color: @foreground;
 }
 
 element-text {
+    background-color: inherit;
+    color: inherit;
     vertical-align: 0.5;
     horizontal-align: 0.5;
 }
 
-listview {
-    padding: 0px 0px 0px 0px;
-    dynamic: true;
-}
-
-mainbox {
-    children: [listview];
-    padding: 20;
-    border-radius: 10;
-}
-
-prompt {
-    background-color: @blue;
-    enabled: false;
-    font: "JetBrainsMono Nerd Font 10";
-    padding: 12 0 0 12;
-    text-color: @fg;
-}
-
-window {
-    transparency: "real";
-    background-color: @bg;
-    border-radius: 20;
+element-icon {
+    background-color: inherit;
 }

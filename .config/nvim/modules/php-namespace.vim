@@ -1,3 +1,5 @@
+" $HOME/.config/nvim/init.vim
+
 function! IPhpExpandClass()
     call PhpExpandClass()
     call feedkeys('a', 'n')
