@@ -111,7 +111,7 @@ schemes:
   onedark: &onedark
     # Default colors
     primary:
-      background: '#2e3440'
+      background: '#2f343f'
       foreground: '#abb2bf'
   
     # Normal colors
