@@ -9,8 +9,8 @@ set expandtab
 set smarttab
 set smartindent
 set autoindent
-" set number
-set relativenumber number
+set number
+" set relativenumber number
 set ruler
 set clipboard=unnamedplus
 set cursorline
@@ -38,7 +38,7 @@ au BufReadPost *.rasi set syntax=css
 
 " Color Scheme
 let g:gruvbox_italic = 1
-colorscheme onedark
+colorscheme dracula
 set background=dark
 hi Comment cterm=italic
 let g:onedark_termcolors = 1

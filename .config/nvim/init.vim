@@ -9,3 +9,4 @@ source $HOME/.config/nvim/modules/python.vim
 source $HOME/.config/nvim/modules/markdown.vim
 
 source $HOME/.config/nvim/modules/php-namespace.vim
+source $HOME/.config/nvim/modules/emmet.vim

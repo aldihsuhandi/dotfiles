@@ -8,6 +8,9 @@ call vundle#begin('~/.vim/plug')
 " Plugin manager
 Plugin 'VundleVim/Vundle.vim'
 
+" HTML plugin
+Plugin 'mattn/emmet-vim'
+
 " Laravel plugin
 Plugin 'tpope/vim-dispatch'             "| Optional
 Plugin 'tpope/vim-projectionist'        "|

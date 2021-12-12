@@ -278,7 +278,7 @@ schemes:
   arc-darker: &arc-darker
     # Default colors
     primary:
-      background: '#d3dae3'
+      background: '#faf9f7'
       foreground: '#383c4a'
   
     # Normal colors
@@ -342,9 +342,32 @@ schemes:
       cyan:    '#73c5e2'
       white:   '#fcfcfc'
 
+  material_theme: &Material
+    primary:
+      background: '0x1e282d'
+      foreground: '0xc4c7d1'
+    normal:
+      black:   '0x666666'
+      red:     '0xeb606b'
+      green:   '0xc3e88d'
+      yellow:  '0xf7eb95'
+      blue:    '0x80cbc4'
+      magenta: '0xff2f90'
+      cyan:    '0xaeddff'
+      white:   '0xffffff'
+    bright:
+      black:   '0xff262b'
+      red:     '0xeb606b'
+      green:   '0xc3e88d'
+      yellow:  '0xf7eb95'
+      blue:    '0x7dc6bf'
+      magenta: '0x6c71c4'
+      cyan:    '0x35434d'
+      white:   '0xffffff'
+
   Nord: &Nord
     primary:
-      background: '#2e3440'
+      background: '#2b303c'
       foreground: '#d8dee9'
       dim_foreground: '#a5abb6'
     cursor:
