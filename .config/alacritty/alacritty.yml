@@ -10,7 +10,7 @@ window:
 scrolling:
   history: 10000
   multiplier: 2
-# background_opacity: 0.95
+# background_opacity: 0.85
 background_opacity: 1
 
 # font configuration
@@ -414,7 +414,7 @@ schemes:
       cyan: '#6d96a5'
       white: '#aeb3bb'
 
-colors: *onedark
+colors: *Nord
 
 # cursor
 cursor:

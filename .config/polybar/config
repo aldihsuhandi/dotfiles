@@ -30,16 +30,16 @@
 ; black           = #000000
 
 ; onedark
-; background      = #282c34
-; foreground      = #abb2bf
-; foreground-alt  = #abb2bf
-; alert           = #e06c75
-; shade           = #282c34
-; acolor          = #ffffff
-; curgent         = #e06c75
-; coccupied       = #56b6c2
-; red             = #e06c75
-; black           = #5c6370
+background      = #282c34
+foreground      = #abb2bf
+foreground-alt  = #abb2bf
+alert           = #e06c75
+shade           = #282c34
+acolor          = #ffffff
+curgent         = #e06c75
+coccupied       = #56b6c2
+red             = #e06c75
+black           = #5c6370
 
 ; adapta nokto
 ; background      =   #e6263238
@@ -53,15 +53,15 @@
 ; red             =   #e14245
 
 ; Nordic
-background      =   #2e3440
-foreground      =   #d8dee9
-foreground-alt  =   #eceff4
-alert           =   #bf616a
-shade           =   #68809a
-acolor          =   #aeb3bb
-curgent         =   #94545d
-coccupied       =   #4c566a
-red             =   #e14245
+; background      =   #2e3440
+; foreground      =   #d8dee9
+; foreground-alt  =   #eceff4
+; alert           =   #bf616a
+; shade           =   #68809a
+; acolor          =   #aeb3bb
+; curgent         =   #94545d
+; coccupied       =   #4c566a
+; red             =   #e14245
 
 [bar/fullbar]
 monitor = ${env:MONITOR}
