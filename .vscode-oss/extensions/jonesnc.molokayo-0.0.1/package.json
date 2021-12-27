@@ -1,0 +1,29 @@
+{
+	"name": "molokayo",
+	"displayName": "molokayo",
+	"description": "A very tweaked molokai based theme. Based on the vim theme by fmoralesc.",
+	"version": "0.0.1",
+	"publisher": "jonesnc",
+	"repository": "https://github.com/jonesnc/molokayo",
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Molokayo",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Molokayo-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "12de5c36-863d-4009-a154-58c36f997ed4",
+		"publisherId": "abde3775-e251-4fe4-93c0-2c7d3e0757d0",
+		"publisherDisplayName": "jonesnc",
+		"installedTimestamp": 1635465502723
+	}
+}

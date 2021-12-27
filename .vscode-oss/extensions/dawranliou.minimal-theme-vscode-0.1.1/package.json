@@ -1,0 +1,33 @@
+{
+	"name": "minimal-theme-vscode",
+	"displayName": "minimal",
+	"description": "Minimal theme to get things done",
+	"publisher": "dawranliou",
+	"version": "0.1.1",
+	"icon": "logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dawran6/minimal-theme-vscode/"
+	},
+	"engines": {
+		"vscode": "^1.39.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Minimal",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Minimal-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "9e4f0190-36ab-426a-b593-aff3aba06220",
+		"publisherId": "368a13ef-9811-4284-82ab-6da270a5449f",
+		"publisherDisplayName": "Daw-Ran Liou",
+		"installedTimestamp": 1635465564283
+	}
+}
