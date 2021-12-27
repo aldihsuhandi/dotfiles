@@ -30,16 +30,28 @@
 ; black           = #000000
 
 ; onedark
-background      = #282c34
-foreground      = #abb2bf
-foreground-alt  = #abb2bf
-alert           = #e06c75
-shade           = #282c34
-acolor          = #ffffff
-curgent         = #e06c75
-coccupied       = #56b6c2
-red             = #e06c75
-black           = #5c6370
+; background      = #282c34
+; foreground      = #abb2bf
+; foreground-alt  = #abb2bf
+; alert           = #e06c75
+; shade           = #282c34
+; acolor          = #ffffff
+; curgent         = #e06c75
+; coccupied       = #56b6c2
+; red             = #e06c75
+; black           = #5c6370
+
+; palenight
+background      = #292d3e
+foreground      = #a6accd
+foreground-alt  = #a6accd
+alert           = #f07178
+shade           = #2e3440
+acolor          = #eeffff
+curgent         = #f07178
+coccupied       = #89ddff
+red             = #f07178
+black           = #676e95
 
 ; adapta nokto
 ; background      =   #e6263238

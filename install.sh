@@ -6,4 +6,5 @@
 \cp .fonts ~ -drf
 \cp .themes ~ -drf
 \cp .mpd ~ -drf
+\cp .vscode-oss ~ -drf
 # \cp Documents ~ -drf

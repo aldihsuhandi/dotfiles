@@ -342,6 +342,34 @@ schemes:
       cyan:    '#73c5e2'
       white:   '#fcfcfc'
 
+  palenight: &palenight
+    # Default colors
+    primary:
+      background: '#292d3e'
+      foreground: '#a6accd'
+  
+    # Normal colors
+    normal:
+      black:   '#676e95'
+      red:     '#f07178'
+      green:   '#c3e88d'
+      yellow:  '#ffcb6b'
+      blue:    '#82aaff'
+      magenta: '#c792ea'
+      cyan:    '#89ddff'
+      white:   '#eeffff'
+  
+    # Bright colors
+    bright:
+      black:   '#676e95'
+      red:     '#f07178'
+      green:   '#c3e88d'
+      yellow:  '#ffcb6b'
+      blue:    '#82aaff'
+      magenta: '#c792ea'
+      cyan:    '#89ddff'
+      white:   '#eeffff'
+
   material_theme: &Material
     primary:
       background: '0x1e282d'
@@ -414,7 +442,7 @@ schemes:
       cyan: '#6d96a5'
       white: '#aeb3bb'
 
-colors: *Nord
+colors: *palenight
 
 # cursor
 cursor:
