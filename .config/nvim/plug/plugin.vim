@@ -40,11 +40,13 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/goyo.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'sbdchd/neoformat'
 
 " Autocomplete plugin
 Plugin 'neoclide/coc.nvim'
 Plugin 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plugin 'arnaud-lb/vim-php-namespace'
+Plugin 'alvan/vim-closetag'
 
 " Syntax Highlight
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -68,6 +70,7 @@ Plugin 'liuchengxu/space-vim-dark'
 Plugin 'fmoralesc/molokayo'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'arcticicestudio/nord-vim'
+Plugin 'drewtempelmeyer/palenight.vim'
 
-call vundle#end()   
+call vundle#end()
 filetype plugin indent on

@@ -8,7 +8,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <C-c> :%y+<CR>
 nnoremap <C-w> :wall<CR>
-nnoremap <C-a> :so ~/.config/nvim/init.vim<CR>
+nnoremap <C-q> :so ~/.config/nvim/init.vim<CR>
 noremap <silent> <A-Left> :vertical resize +3<CR>
 noremap <silent> <A-Right> :vertical resize -3<CR>
 noremap <silent> <A-Up> :resize +3<CR>
@@ -38,5 +38,3 @@ nnoremap <C-Up> :tabprevious<CR>
 " Navigate Between Buffer
 nnoremap <C-L> :bn<CR>
 nnoremap <C-H> :bp<CR>
-
-" Disable Shortcut
