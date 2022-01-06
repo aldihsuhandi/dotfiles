@@ -10,7 +10,7 @@ window:
 scrolling:
   history: 10000
   multiplier: 2
-# background_opacity: 0.85
+# background_opacity: 0.95
 background_opacity: 1
 
 # font configuration
@@ -446,7 +446,7 @@ colors: *palenight
 
 # cursor
 cursor:
-  style: Block
+  style: Beam
   vi_mode_style: Block
   unfocused_hollow: false
 

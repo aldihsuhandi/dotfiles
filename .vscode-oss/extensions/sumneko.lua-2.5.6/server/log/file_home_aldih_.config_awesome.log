@@ -1,0 +1,666 @@
+[11:45:51.865][info] [#0:/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/main.lua:49]: Lua Lsp startup, root: 	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server
+[11:45:51.865][debug][#0:/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/main.lua:50]: ROOT:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server
+[11:45:51.865][debug][#0:/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/main.lua:51]: LOGPATH:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/log
+[11:45:51.865][debug][#0:/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/main.lua:52]: METAPATH:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta
+[11:45:51.865][debug][#0:/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/main.lua:53]: VERSION:	2.5.6
+[11:45:51.934][info] [#0:script/service/telemetry.lua:21]: Telemetry Token:	6ABF0DD03BDD7741
+[11:45:51.939][info] [#0:script/pub/pub.lua:48]: Create brave:	1
+[11:45:51.939][info] [#0:script/pub/pub.lua:48]: Create brave:	2
+[11:45:51.939][info] [#0:script/pub/pub.lua:48]: Create brave:	3
+[11:45:51.939][info] [#0:script/pub/pub.lua:48]: Create brave:	4
+[11:45:51.939][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 1.332 MB
+        # 00 : 1.332 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[11:45:51.979][debug][#0:script/client.lua:344]: Client init	{
+    capabilities = {
+        general = {
+            markdown = {
+                parser = "marked",
+                version = "1.1.0",
+            },
+            regularExpressions = {
+                engine = "ECMAScript",
+                version = "ES2020",
+            },
+            staleRequestSupport = {
+                cancel = true,
+                retryOnContentModified = {
+                    [1] = "textDocument/semanticTokens/full",
+                    [2] = "textDocument/semanticTokens/range",
+                    [3] = "textDocument/semanticTokens/full/delta",
+                },
+            },
+        },
+        textDocument = {
+            callHierarchy = {
+                dynamicRegistration = true,
+            },
+            codeAction = {
+                codeActionLiteralSupport = {
+                    codeActionKind = {
+                        valueSet = {
+                            [1] = "",
+                            [2] = "quickfix",
+                            [3] = "refactor",
+                            [4] = "refactor.extract",
+                            [5] = "refactor.inline",
+                            [6] = "refactor.rewrite",
+                            [7] = "source",
+                            [8] = "source.organizeImports",
+                        },
+                    },
+                },
+                dataSupport = true,
+                disabledSupport = true,
+                dynamicRegistration = true,
+                honorsChangeAnnotations = false,
+                isPreferredSupport = true,
+                resolveSupport = {
+                    properties = {
+                        [1] = "edit",
+                    },
+                },
+            },
+            codeLens = {
+                dynamicRegistration = true,
+            },
+            colorProvider = {
+                dynamicRegistration = true,
+            },
+            completion = {
+                completionItem = {
+                    commitCharactersSupport = true,
+                    deprecatedSupport = true,
+                    documentationFormat = {
+                        [1] = "markdown",
+                        [2] = "plaintext",
+                    },
+                    insertReplaceSupport = true,
+                    insertTextModeSupport = {
+                        valueSet = {
+                            [1] = 1,
+                            [2] = 2,
+                        },
+                    },
+                    labelDetailsSupport = true,
+                    preselectSupport = true,
+                    resolveSupport = {
+                        properties = {
+                            [1] = "documentation",
+                            [2] = "detail",
+                            [3] = "additionalTextEdits",
+                        },
+                    },
+                    snippetSupport = true,
+                    tagSupport = {
+                        valueSet = {
+                            [1] = 1,
+                        },
+                    },
+                },
+                completionItemKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                    },
+                },
+                contextSupport = true,
+                dynamicRegistration = true,
+                insertTextMode = 2,
+            },
+            declaration = {
+                dynamicRegistration = true,
+                linkSupport = true,
+            },
+            definition = {
+                dynamicRegistration = true,
+                linkSupport = true,
+            },
+            documentHighlight = {
+                dynamicRegistration = true,
+            },
+            documentLink = {
+                dynamicRegistration = true,
+                tooltipSupport = true,
+            },
+            documentSymbol = {
+                dynamicRegistration = true,
+                hierarchicalDocumentSymbolSupport = true,
+                labelSupport = true,
+                symbolKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                        [26] = 26,
+                    },
+                },
+                tagSupport = {
+                    valueSet = {
+                        [1] = 1,
+                    },
+                },
+            },
+            foldingRange = {
+                dynamicRegistration = true,
+                lineFoldingOnly = true,
+                rangeLimit = 5000,
+            },
+            formatting = {
+                dynamicRegistration = true,
+            },
+            hover = {
+                contentFormat = {
+                    [1] = "markdown",
+                    [2] = "plaintext",
+                },
+                dynamicRegistration = true,
+            },
+            implementation = {
+                dynamicRegistration = true,
+                linkSupport = true,
+            },
+            linkedEditingRange = {
+                dynamicRegistration = true,
+            },
+            onTypeFormatting = {
+                dynamicRegistration = true,
+            },
+            publishDiagnostics = {
+                codeDescriptionSupport = true,
+                dataSupport = true,
+                relatedInformation = true,
+                tagSupport = {
+                    valueSet = {
+                        [1] = 1,
+                        [2] = 2,
+                    },
+                },
+                versionSupport = false,
+            },
+            rangeFormatting = {
+                dynamicRegistration = true,
+            },
+            references = {
+                dynamicRegistration = true,
+            },
+            rename = {
+                dynamicRegistration = true,
+                honorsChangeAnnotations = true,
+                prepareSupport = true,
+                prepareSupportDefaultBehavior = 1,
+            },
+            selectionRange = {
+                dynamicRegistration = true,
+            },
+            semanticTokens = {
+                dynamicRegistration = true,
+                formats = {
+                    [1] = "relative",
+                },
+                multilineTokenSupport = false,
+                overlappingTokenSupport = false,
+                requests = {
+                    full = {
+                        delta = true,
+                    },
+                    range = true,
+                },
+                tokenModifiers = {
+                    [01] = "declaration",
+                    [02] = "definition",
+                    [03] = "readonly",
+                    [04] = "static",
+                    [05] = "deprecated",
+                    [06] = "abstract",
+                    [07] = "async",
+                    [08] = "modification",
+                    [09] = "documentation",
+                    [10] = "defaultLibrary",
+                },
+                tokenTypes = {
+                    [01] = "namespace",
+                    [02] = "type",
+                    [03] = "class",
+                    [04] = "enum",
+                    [05] = "interface",
+                    [06] = "struct",
+                    [07] = "typeParameter",
+                    [08] = "parameter",
+                    [09] = "variable",
+                    [10] = "property",
+                    [11] = "enumMember",
+                    [12] = "event",
+                    [13] = "function",
+                    [14] = "method",
+                    [15] = "macro",
+                    [16] = "keyword",
+                    [17] = "modifier",
+                    [18] = "comment",
+                    [19] = "string",
+                    [20] = "number",
+                    [21] = "regexp",
+                    [22] = "operator",
+                },
+            },
+            signatureHelp = {
+                contextSupport = true,
+                dynamicRegistration = true,
+                signatureInformation = {
+                    activeParameterSupport = true,
+                    documentationFormat = {
+                        [1] = "markdown",
+                        [2] = "plaintext",
+                    },
+                    parameterInformation = {
+                        labelOffsetSupport = true,
+                    },
+                },
+            },
+            synchronization = {
+                didSave = true,
+                dynamicRegistration = true,
+                willSave = true,
+                willSaveWaitUntil = true,
+            },
+            typeDefinition = {
+                dynamicRegistration = true,
+                linkSupport = true,
+            },
+        },
+        window = {
+            showDocument = {
+                support = true,
+            },
+            showMessage = {
+                messageActionItem = {
+                    additionalPropertiesSupport = true,
+                },
+            },
+            workDoneProgress = true,
+        },
+        workspace = {
+            applyEdit = true,
+            codeLens = {
+                refreshSupport = true,
+            },
+            configuration = true,
+            didChangeConfiguration = {
+                dynamicRegistration = true,
+            },
+            didChangeWatchedFiles = {
+                dynamicRegistration = true,
+            },
+            executeCommand = {
+                dynamicRegistration = true,
+            },
+            fileOperations = {
+                didCreate = true,
+                didDelete = true,
+                didRename = true,
+                dynamicRegistration = true,
+                willCreate = true,
+                willDelete = true,
+                willRename = true,
+            },
+            semanticTokens = {
+                refreshSupport = true,
+            },
+            symbol = {
+                dynamicRegistration = true,
+                symbolKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                        [26] = 26,
+                    },
+                },
+                tagSupport = {
+                    valueSet = {
+                        [1] = 1,
+                    },
+                },
+            },
+            workspaceEdit = {
+                changeAnnotationSupport = {
+                    groupsOnLabel = true,
+                },
+                documentChanges = true,
+                failureHandling = "textOnlyTransactional",
+                normalizesLineEndings = true,
+                resourceOperations = {
+                    [1] = "create",
+                    [2] = "rename",
+                    [3] = "delete",
+                },
+            },
+            workspaceFolders = true,
+        },
+    },
+    clientInfo = {
+        name = "Code - OSS",
+        version = "1.62.0",
+    },
+    initializationOptions = {
+        changeConfiguration = true,
+    },
+    locale = "en-us",
+    processId = 704613,
+    rootPath = "/home/aldih/.config/awesome",
+    rootUri = "file:///home/aldih/.config/awesome",
+    trace = "off",
+    workDoneToken = "6765651a-81f6-48a2-98b1-e15632c70151",
+    workspaceFolders = {
+        [1] = {
+            name = "awesome",
+            uri = "file:///home/aldih/.config/awesome",
+        },
+    },
+}
+[11:45:51.979][info] [#0:script/language.lua:135]: VSC language: en-us
+[11:45:51.979][info] [#0:script/language.lua:136]: LS  language: en-us
+[11:45:51.980][info] [#0:script/workspace/workspace.lua:34]: Workspace inited: 	file:///home/aldih/.config/awesome
+[11:45:51.980][info] [#0:script/workspace/workspace.lua:43]: Log path: 	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/log/file_home_aldih_.config_awesome.log
+[11:45:51.981][debug][#0:script/provider/completion.lua:34]: Enable completion.
+[11:45:51.981][debug][#0:script/provider/completion.lua:59]: Disable completion.
+[11:45:51.981][debug][#0:script/provider/completion.lua:34]: Enable completion.
+[11:45:51.982][debug][#0:script/provider/semantic-tokens.lua:33]: Enable semantic tokens.
+[11:45:51.982][debug][#0:script/provider/semantic-tokens.lua:108]: Refresh semantic tokens.
+[11:45:51.982][debug][#0:script/provider/semantic-tokens.lua:108]: Refresh semantic tokens.
+[11:45:51.982][debug][#0:script/provider/semantic-tokens.lua:108]: Refresh semantic tokens.
+[11:45:51.982][debug][#0:script/provider/semantic-tokens.lua:108]: Refresh semantic tokens.
+[11:45:51.982][debug][#0:script/provider/semantic-tokens.lua:108]: Refresh semantic tokens.
+[11:45:51.996][debug][#0:script/provider/provider.lua:24]: load config from client
+[11:45:51.998][debug][#0:script/provider/provider.lua:42]: loaded config dump:	{
+    Lua = {
+        IntelliSense = {
+            traceBeSetted = false,
+            traceFieldInject = false,
+            traceLocalSet = false,
+            traceReturn = false,
+        },
+        color = {
+            mode = "Semantic",
+        },
+        completion = {
+            autoRequire = true,
+            callSnippet = "Disable",
+            displayContext = 0,
+            enable = true,
+            keywordSnippet = "Replace",
+            postfix = "@",
+            requireSeparator = ".",
+            showParams = true,
+            showWord = "Fallback",
+            workspaceWord = true,
+        },
+        diagnostics = {
+            disable = {
+            },
+            enable = true,
+            globals = {
+            },
+            ignoredFiles = "Opened",
+            libraryFiles = "Opened",
+            neededFileStatus = {
+            },
+            severity = {
+            },
+            workspaceDelay = 0,
+            workspaceRate = 100,
+        },
+        hint = {
+            await = true,
+            enable = false,
+            paramName = "All",
+            paramType = true,
+            setType = false,
+        },
+        hover = {
+            enable = true,
+            enumsLimit = 5,
+            previewFields = 20,
+            viewNumber = true,
+            viewString = true,
+            viewStringMax = 1000,
+        },
+        runtime = {
+            builtin = {
+            },
+            fileEncoding = "utf8",
+            meta = "${version} ${language} ${encoding}",
+            nonstandardSymbol = {
+            },
+            path = {
+                [1] = "?.lua",
+                [2] = "?/init.lua",
+            },
+            pathStrict = false,
+            plugin = "",
+            special = {
+            },
+            unicodeName = false,
+            version = "Lua 5.4",
+        },
+        signatureHelp = {
+            enable = true,
+        },
+        telemetry = {
+            enable = {
+            },
+        },
+        window = {
+            progressBar = true,
+            statusBar = true,
+        },
+        workspace = {
+            checkThirdParty = true,
+            ignoreDir = {
+                [1] = ".vscode",
+            },
+            ignoreSubmodules = true,
+            library = {
+            },
+            maxPreload = 1000,
+            preloadFileSize = 100,
+            useGitIgnore = true,
+            userThirdParty = {
+            },
+        },
+    },
+    editor = {
+        acceptSuggestionOnEnter = "on",
+        semanticHighlighting = {
+            enabled = "configuredByTheme",
+        },
+    },
+    files = {
+        associations = {
+        },
+        exclude = {
+            ["**/.DS_Store"] = true,
+            ["**/.git"] = true,
+            ["**/.hg"] = true,
+            ["**/.svn"] = true,
+            ["**/CVS"] = true,
+            ["**/Thumbs.db"] = true,
+        },
+    },
+}
+[11:45:51.998][debug][#0:script/provider/semantic-tokens.lua:108]: Refresh semantic tokens.
+[11:45:51.998][debug][#0:script/provider/semantic-tokens.lua:108]: Refresh semantic tokens.
+[11:45:52.012][info] [#0:script/plugin.lua:88]: plugin path:	nil
+[11:45:52.124][info] [#0:script/workspace/workspace.lua:335]: Preload start.
+[11:45:52.124][info] [#0:script/workspace/workspace.lua:90]: Ignore by exclude:	**/CVS
+[11:45:52.124][info] [#0:script/workspace/workspace.lua:90]: Ignore by exclude:	**/Thumbs.db
+[11:45:52.124][info] [#0:script/workspace/workspace.lua:90]: Ignore by exclude:	**/.git
+[11:45:52.124][info] [#0:script/workspace/workspace.lua:90]: Ignore by exclude:	**/.svn
+[11:45:52.124][info] [#0:script/workspace/workspace.lua:90]: Ignore by exclude:	**/.DS_Store
+[11:45:52.124][info] [#0:script/workspace/workspace.lua:90]: Ignore by exclude:	**/.hg
+[11:45:52.124][info] [#0:script/workspace/workspace.lua:135]: Ignore directory:	.vscode
+[11:45:52.125][debug][#0:script/workspace/workspace.lua:168]: getLibraryMatchers	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.125][info] [#0:script/workspace/workspace.lua:340]: Scan files at:	/home/aldih/.config/awesome
+[11:45:52.126][info] [#0:script/workspace/workspace.lua:345]: Scan library at:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.129][info] [#0:script/workspace/workspace.lua:369]: Found 12 files.
+[11:45:52.129][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 4.299 KB
+[11:45:52.129][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.140][info] [#0:script/workspace/workspace.lua:372]: Loaded 1/12 files
+[11:45:52.141][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.375 KB
+[11:45:52.141][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.158][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.207 KB
+[11:45:52.158][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.172][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.352 KB
+[11:45:52.172][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.180][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.216 KB
+[11:45:52.180][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.182][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 2.767 KB
+[11:45:52.182][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.192][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 13.954 KB
+[11:45:52.192][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.209][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.516 KB
+[11:45:52.209][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.218][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.573 KB
+[11:45:52.218][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.224][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.937 KB
+[11:45:52.224][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.227][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.633 KB
+[11:45:52.227][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/aldih/.vscode-oss/extensions/sumneko.lua-2.5.6/server/meta/Lua 5.4 en-us utf8
+[11:45:52.238][info] [#0:script/workspace/workspace.lua:372]: Loaded 11/12 files
+[11:45:52.239][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/aldih/.config/awesome/rc.lua , size = 22.985 KB
+[11:45:52.545][info] [#0:script/workspace/workspace.lua:372]: Loaded 12/12 files
+[11:45:52.546][info] [#0:script/workspace/workspace.lua:381]: Preload finish.
+[11:45:52.679][debug][#0:script/proto/proto.lua:157]: Method [textDocument/semanticTokens/range] takes [0.275]sec.
+[11:45:52.781][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/aldih/.config/awesome/rc.lua	43
+[11:45:52.782][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.231401
+[11:46:22.395][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/aldih/.config/awesome/rc.lua	43
+[11:46:22.416][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.021655
+[11:46:23.577][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/aldih/.config/awesome/rc.lua	43
+[11:46:23.598][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.020261
+[11:46:24.263][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/aldih/.config/awesome/rc.lua	43
+[11:46:24.312][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.049499
+[11:46:24.946][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/aldih/.config/awesome/rc.lua	43
+[11:46:24.968][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.022142
+[11:46:25.157][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/aldih/.config/awesome/rc.lua	43
+[11:46:25.184][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.026961
+[11:46:45.432][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/aldih/.config/awesome/rc.lua	43
+[11:46:45.459][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.026176
+[11:46:47.300][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/aldih/.config/awesome/rc.lua	45
+[11:46:47.326][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.026321
+[11:46:48.015][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/aldih/.config/awesome/rc.lua	47
+[11:46:48.067][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.050562
+[11:46:50.165][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/aldih/.config/awesome/rc.lua	45
+[11:46:50.212][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.046866
+[11:46:50.806][debug][#0:script/provider/diagnostic.lua:251]: publishDiagnostics	file:///home/aldih/.config/awesome/rc.lua	43
+[11:46:50.867][debug][#0:script/provider/diagnostic.lua:370]: 全文诊断耗时：	0.060124
+[11:46:51.887][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 16.850 MB
+        # 00 : 8.252 MB
+        # 01 : 2.127 MB
+        # 02 : 2.127 MB
+        # 03 : 2.187 MB
+        # 04 : 2.157 MB
+    --------------- Coroutine ---------------
+        Total:     5
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      5
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[11:47:13.233][debug][#0:script/provider/provider.lua:205]: didClose	file:///home/aldih/.config/awesome/rc.lua
+[11:47:14.200][info] [#0:script/provider/provider.lua:119]: Server shutdown.
+[11:47:14.202][info] [#0:script/provider/provider.lua:112]: Server exited.

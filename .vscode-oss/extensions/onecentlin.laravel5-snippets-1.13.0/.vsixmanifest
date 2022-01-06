@@ -4,7 +4,7 @@
     <Identity Language="en-US" Id="laravel5-snippets" Version="1.13.0" Publisher="onecentlin"/>
     <DisplayName>Laravel Snippets</DisplayName>
     <Description xml:space="preserve">Laravel snippets for Visual Studio Code  (Support Laravel 5 and above)</Description>
-    <Tags>laravel,snippet,laravel5,laravel6,laravel7,laravel8</Tags>
+    <Tags>laravel,snippet,laravel5,laravel6,laravel7,laravel8,__web_extension</Tags>
     <Categories>Snippets</Categories>
     <GalleryFlags>Public</GalleryFlags>
     <Badges></Badges>

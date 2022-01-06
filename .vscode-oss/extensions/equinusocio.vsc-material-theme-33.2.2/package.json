@@ -191,7 +191,7 @@
 		"id": "45bfc9eb-5e03-487f-bffe-315fa6881d6a",
 		"publisherId": "3b9d55d2-da9e-415a-9bea-8d6bc07147d8",
 		"publisherDisplayName": "Equinusocio",
-		"installedTimestamp": 1635554423986
+		"installedTimestamp": 1640770475176
 	},
 	"dependencies": {
 		"@sanity/client": "2.1.0",

@@ -23,6 +23,9 @@ Plugin 'junegunn/fzf.vim'
 
 " Aestetic Plugin
 Plugin 'mhinz/vim-startify'
+Plugin 'luochen1990/rainbow'
+Plugin 'Yggdroot/indentLine'
+Plugin 'lukas-reineke/indent-blankline.nvim'
 
 " Github Plugin
 Plugin 'airblade/vim-gitgutter'
@@ -38,15 +41,16 @@ Plugin 'ap/vim-css-color'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/goyo.vim'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'sbdchd/neoformat'
+Plugin 'beanworks/vim-phpfmt'
 
 " Autocomplete plugin
 Plugin 'neoclide/coc.nvim'
 Plugin 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'alvan/vim-closetag'
+Plugin 'nono/jquery.vim'
 
 " Syntax Highlight
 Plugin 'octol/vim-cpp-enhanced-highlight'

@@ -13,3 +13,6 @@ source $HOME/.config/nvim/modules/emmet.vim
 
 source $HOME/.config/nvim/modules/neoformat.vim
 source $HOME/.config/nvim/modules/closetag.vim
+
+source $HOME/.config/nvim/modules/rainbow-bracket.vim
+source $HOME/.config/nvim/modules/indentguide.lua

@@ -85,3 +85,5 @@ nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
 nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery

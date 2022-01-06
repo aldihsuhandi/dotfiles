@@ -21,6 +21,7 @@ inputbar {
     padding: 5px;
     margin: 10px;
     color: @foreground-alt;
+    border-radius: 5px;
 }
 
 prompt {

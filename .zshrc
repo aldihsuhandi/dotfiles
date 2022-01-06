@@ -6,7 +6,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting ssh-agent)
 source $ZSH/oh-my-zsh.sh
 
 # EXPORT
-export MANPAGER="nvim -c 'set ft=man' -"
+# export MANPAGER="nvim -c 'set ft=man' -"
 export EDITOR="nvim"
 
 # general alias
