@@ -1,0 +1,64 @@
+configuration {
+    font: "JetBrainsMono Nerd Font 12";
+    hide-scrollbar: true;
+    show-icons: true;
+}
+
+@import "color.rasi"
+
+* {
+    background-color: @background-alt;
+}
+
+window {
+    y-offset: -200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* search bar */
+inputbar {
+    padding: 5px;
+    margin: 10px;
+    color: @foreground-alt;
+}
+
+prompt {
+    color: inherit;
+}
+
+entry {
+    color: inherit;
+}
+
+/* list */
+listview {
+    lines: 5;
+    spacing: 8px;
+    margin: 0 0 10px 0;
+}
+
+element {
+    margin: 0 25px;
+    padding: 10px;
+    background-color: @background-alt;
+    color: @foreground-alt;
+    border-radius: 5px;
+}
+
+element selected {
+    background-color: @background;
+    color: @foreground;
+}
+
+element-text {
+    background-color: inherit;
+    color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 50px;
+    background-color: inherit;
+    margin: 0 10px 0 0;
+}

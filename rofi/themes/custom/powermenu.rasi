@@ -1,0 +1,51 @@
+configuration {
+    font: "JetBrainsMono Nerd Font 30";
+    hide-scrollbar: true;
+    show-icons: true;
+}
+
+@import "color.rasi"
+
+window {
+    border-radius: 10px;
+    backgroun-color: @background;
+}
+
+/* search bar */
+inputbar {
+    enabled: false;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* list */
+listview {
+    columns: 4;
+    lines: 1;
+}
+
+element {
+    padding: 22px 10px 22px 10px;
+    orientation: vertical;
+    background-color: @background-alt;
+    margin: 10px;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    border-radius: 10px;
+}
+
+element selected {
+    background-color: @background;
+    color: @foreground;
+}
+
+element-text {
+    background-color: inherit;
+    color: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+element-icon {
+    background-color: inherit;
+}

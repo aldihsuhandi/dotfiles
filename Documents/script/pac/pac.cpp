@@ -85,9 +85,12 @@ void downgrade_package(std::vector<std::string> args)
     }
 }
 
-void update()
+void update(std::vector<std::string> args)
 {
-    system("paru");
+    if((int)args.size() == 2 && args[1] == "--noconfirm")
+        system("paru -Syu --noconfirm");
+    else
+        system("paru -Syu");
 }
 
 void refresh()
@@ -95,28 +98,51 @@ void refresh()
     system("sudo pacman -Syyy");
 }
 
+void removeOrphans()
+{
+    FILE *package = popen("paru -Qdtq", "r");
+    std::string cmd = "paru -R --noconfirm";
+    int cnt = 0;
+
+    while(!feof(package)){
+        char tempPack[1000];
+        fscanf(package, "%s\n", tempPack);
+        cmd += " " + (std::string)tempPack;
+        ++cnt;
+    }
+
+    if(cnt == 1)
+    {
+        puts("Finish...");
+        return;
+    }
+    else
+    {
+        system(cmd.c_str());
+        removeOrphans();
+    }
+}
+
 void cl(std::vector<std::string> args)
 {
     if(args.size() == 1)
-        system("echo \"Incomplete command\"");
+        puts("Incomplete command");
     else if(args[1] == "cache")
         system("sudo pacman -Scc");
     else if(args[1] == "orphans")
     {
-        FILE *package = popen("pacman -Qdtq", "r");
-        std::string cmd = "paru -R";
-        int cnt = 0;
-        while(!feof(package)){
-            char tempPack[1000];
-            fscanf(package, "%s\n", tempPack);
-            cmd += " " + (std::string)tempPack;
-            ++cnt;
+        printf("Remove all orphaned packages?(y/N) ");
+        std::string op;
+        std::getline(std::cin, op);
+        if(op == "")
+            op = "N";
+
+        if(op == "n" || op == "N")
+            return;
+        else 
+        {
+            removeOrphans();
         }
-        // printf("%d\n", cnt);
-        if(cnt == 1)
-            system("echo \"There is no orphaned package\"");
-        else
-            system(cmd.c_str());
     }
 }
 
@@ -140,7 +166,7 @@ int main(int argc, char **argv)
         else if(args[0] == "list")
             list_package(args);
         else if(args[0] == "update")
-            update();
+            update(args);
         else if(args[0] == "downgrade")
             downgrade_package(args);
         else if(args[0] == "refresh")
