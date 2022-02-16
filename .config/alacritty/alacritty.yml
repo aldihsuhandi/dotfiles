@@ -1,5 +1,6 @@
 # windows settings
 window:
+  opacity: 0.95
   dimension:
     columns: 140
     lines: 30
@@ -10,8 +11,6 @@ window:
 scrolling:
   history: 10000
   multiplier: 2
-# background_opacity: 0.95
-background_opacity: 1
 
 # font configuration
 font:
@@ -442,7 +441,7 @@ schemes:
       cyan: '#6d96a5'
       white: '#aeb3bb'
 
-colors: *palenight
+colors: *Nord
 
 # cursor
 cursor:
