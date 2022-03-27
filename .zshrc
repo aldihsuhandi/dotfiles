@@ -1,4 +1,4 @@
-export ZSH="/home/aldih/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
 export ANDROID_SDK_ROOT='/opt/android-sdk'
 ZSH_THEME="robbyrussell"
@@ -65,10 +65,10 @@ alias l="ls"
 alias s="ls"
 
 # devour alias
-alias gwenview="devour gwenview"
-alias celluloid="devour celluloid"
-alias mpv="devour mpv"
-alias okular="devour okular"
+# alias gwenview="devour gwenview"
+# alias celluloid="devour celluloid"
+# alias mpv="devour mpv"
+# alias okular="devour okular"
 
 # alias for package manager
 alias pac="$HOME/Documents/script/pac/./pac"
