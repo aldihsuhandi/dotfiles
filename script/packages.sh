@@ -1,8 +1,8 @@
 # essential package
-paru -S --noconfirm starship exa ripgrep steam-native-runtime protonup-qt zoom discord soundux noisetorch solaar code libreoffice-fresh jdk-openjdk jdk11-openjdk jdk8-openjdk intellij-idea-community-edition
-
-# school stuff
-# paru -S --noconfirm xampp composer nodejs yarn
+paru -S --noconfirm starship exa zsh ripgrep flatpak noisetorch solaar code libreoffice-fresh jdk-openjdk easyeffect
 
 # networking
 paru -S --noconfirm cloudflare-warp-bin
+
+# flatpak
+flatpak install zoom mailspring discord spotify bitwarden
