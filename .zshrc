@@ -64,12 +64,6 @@ alias sl="ls"
 alias l="ls"
 alias s="ls"
 
-# devour alias
-# alias gwenview="devour gwenview"
-# alias celluloid="devour celluloid"
-# alias mpv="devour mpv"
-# alias okular="devour okular"
-
 # alias for package manager
 alias pac="$HOME/Documents/script/pac/./pac"
 
