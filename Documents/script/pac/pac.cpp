@@ -38,14 +38,19 @@ void install_package(std::vector<std::string> args)
     else
     {
         std::string cmd;
+        bool flag = false;
         cmd = "paru -S";
-        for(int i = 1;i < (int)args.size();++i)
-            cmd += " " + args[i];
+        for(int i = 1;i < (int)args.size();++i) {
+            std::string t = args[i];
+            if((t == "-y" || t == "-Y" || t == "--noconfirm") && !flag)
+                t = "--noconfirm", flag = true;
+            cmd += " " + t;
+        }
         system(cmd.c_str());
     }
 }
 
-void uninstall_package(std::vector<std::string> args)
+void uninstallPackage(std::vector<std::string> args)
 {
     if((int)args.size() == 1)
         puts("Incomplete command");
@@ -87,7 +92,13 @@ void downgrade_package(std::vector<std::string> args)
 
 void update(std::vector<std::string> args)
 {
-    if((int)args.size() == 2 && args[1] == "--noconfirm")
+    if(
+        (int)args.size() == 2 && (
+            args[1] == "--noconfirm"|| 
+            args[1] == "-y" ||
+            args[1] == "-Y"
+        )
+    )
         system("paru -Syu --noconfirm");
     else
         system("paru -Syu");
@@ -158,7 +169,7 @@ int main(int argc, char **argv)
         if(args[0] == "install")
             install_package(args);
         else if(args[0] == "uninstall")
-            uninstall_package(args);
+            uninstallPackage(args);
         else if(args[0] == "purge")
             purge_package(args);
         else if(args[0] == "search")
