@@ -1,3 +1,0 @@
-configuration {
-    modi: "window,run,ssh,combi,drun";
-}

@@ -23,7 +23,7 @@ Plugin 'junegunn/fzf.vim'
 
 " Aestetic Plugin
 Plugin 'mhinz/vim-startify'
-Plugin 'luochen1990/rainbow'
+" Plugin 'luochen1990/rainbow'
 Plugin 'Yggdroot/indentLine'
 Plugin 'lukas-reineke/indent-blankline.nvim'
 
@@ -42,7 +42,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/goyo.vim'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'sbdchd/neoformat'
+" Plugin 'sbdchd/neoformat'
+Plugin 'mhartington/formatter.nvim'
 Plugin 'beanworks/vim-phpfmt'
 
 " Autocomplete plugin

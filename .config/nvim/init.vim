@@ -11,7 +11,8 @@ source $HOME/.config/nvim/modules/markdown.vim
 source $HOME/.config/nvim/modules/php-namespace.vim
 source $HOME/.config/nvim/modules/emmet.vim
 
-source $HOME/.config/nvim/modules/neoformat.vim
+" source $HOME/.config/nvim/modules/neoformat.vim
+source $HOME/.config/nvim/modules/formatter.lua
 source $HOME/.config/nvim/modules/closetag.vim
 
 source $HOME/.config/nvim/modules/rainbow-bracket.vim

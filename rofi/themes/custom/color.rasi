@@ -1,9 +1,0 @@
-* {
-    background: #0e1111;
-    background-alt: #11141b;
-
-    foreground: #d8dee9;
-    foreground-alt: #eceff4;
-
-    white: #d3dae3;
-}

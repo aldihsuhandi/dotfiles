@@ -22,6 +22,14 @@ inputbar {
     margin: 10px;
 }
 
+prompt {
+    color: @foreground;
+}
+
+entry {
+    color: @foreground;
+}
+
 /* list */
 listview {
     lines: 5;
