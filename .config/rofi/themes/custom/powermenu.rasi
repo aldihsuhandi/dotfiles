@@ -6,9 +6,12 @@ configuration {
 
 @import "color.rasi"
 
+* {
+    background-color: @background-alt;
+}
+
 window {
     border-radius: 10px;
-    backgroun-color: @background;
 }
 
 /* search bar */
@@ -27,7 +30,6 @@ listview {
 element {
     padding: 22px 10px 22px 10px;
     orientation: vertical;
-    background-color: @background-alt;
     margin: 10px;
     vertical-align: 0.5;
     horizontal-align: 0.5;
@@ -41,7 +43,7 @@ element selected {
 
 element-text {
     background-color: inherit;
-    color: inherit;
+    color: @foreground;
     vertical-align: 0.5;
     horizontal-align: 0.5;
 }
