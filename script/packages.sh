@@ -5,4 +5,4 @@ paru -S --noconfirm starship exa zsh ripgrep flatpak noisetorch solaar code code
 paru -S --noconfirm cloudflare-warp-bin
 
 # flatpak
-flatpak install zoom mailspring discord spotify bitwarden -y
+flatpak install zoom mailspring discord spotify bitwarden flatseal extensionmanager -y

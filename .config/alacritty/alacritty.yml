@@ -1,6 +1,6 @@
 # windows settings
 window:
-  opacity: 0.95
+  opacity: 1
   dimension:
     columns: 140
     lines: 30
@@ -441,7 +441,7 @@ schemes:
       cyan: '#6d96a5'
       white: '#aeb3bb'
 
-colors: *Nord
+colors: *onedark
 
 # cursor
 cursor:

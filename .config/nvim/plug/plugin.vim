@@ -45,6 +45,7 @@ Plugin 'sheerun/vim-polyglot'
 " Plugin 'sbdchd/neoformat'
 Plugin 'mhartington/formatter.nvim'
 Plugin 'beanworks/vim-phpfmt'
+Plugin 'nvim-treesitter/nvim-treesitter'
 
 " Autocomplete plugin
 Plugin 'neoclide/coc.nvim'
