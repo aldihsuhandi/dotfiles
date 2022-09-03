@@ -1,4 +1,5 @@
 # !/bin/bash
+confirm="N"
 \cp .config ~ -drf
 \cp .zshrc ~
 \cp .bashrc ~
@@ -6,5 +7,11 @@
 \cp .fonts ~ -drf
 \cp .themes ~ -drf
 \cp .mpd ~ -drf
-\cp .vscode-oss ~ -drf
+
+
+read -p "Do you want to use my vscode config[y/n]? " confirm
+if [ $confirm == "Y" -o $confirm == "y" ]
+then
+    \cp .vscode-oss ~ -drf
+fi
 # \cp Documents ~ -drf
