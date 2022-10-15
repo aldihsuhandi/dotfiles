@@ -21,7 +21,6 @@ alias vim='nvim'
 alias v='vim'
 alias sv='sudoedit'
 alias svim='sudoedit'
-alias grep='rg'
 alias df='df -h'
 
 # extraction command
@@ -72,8 +71,8 @@ alias weather='curl wttr.in'
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
 # prelaunch command
-if [ -f ~/.personal_alias ]; then
-    source ~/.personal_alias
+if [ -f $HOME/Documents/zsh/personal_alias ]; then
+    source $HOME/Documents/zsh/personal_alias
 fi
 clear
 eval "$(starship init zsh)"
