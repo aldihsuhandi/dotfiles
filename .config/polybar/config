@@ -17,22 +17,10 @@
 ;==========================================================
 
 [color]
-; dracula
-; background      = #1e1f29
-; foreground      = #f8f8f2
-; foreground-alt  = #f8f8f2
-; alert           = #ff5555
-; shade           = #6272a4
-; acolor          = #ECEFF4
-; curgent         = #BF616A
-; coccupied       = #5E81AC
-; red             = #ff6e67
-; black           = #000000
-
-; onedark
 background      = #282c34
+background-alt  = #5e81ac
 foreground      = #abb2bf
-foreground-alt  = #abb2bf
+foreground-alt  = #ffffff
 alert           = #e06c75
 shade           = #282c34
 curgent         = #e06c75
@@ -40,74 +28,11 @@ coccupied       = #56b6c2
 red             = #e06c75
 black           = #5c6370
 
-; transparency
-; background      = #00292d3e
-; shade           = #002e3440
-
-; palenight
-; background      = #ee292d3e
-; foreground      = #a6accd
-; foreground-alt  = #a6accd
-; alert           = #f07178
-; shade           = #2e3440
-; acolor          = #eeffff
-; curgent         = #f07178
-; coccupied       = #89ddff
-; red             = #f07178
-; black           = #676e95
-
-; adapta nokto
-; background      =   #e6263238
-; foreground      =   #d3dae3
-; foreground-alt  =   #fcfcfc
-; alert           =   #ff5555
-; shade           =   #4877b1
-; acolor          =   #222d32
-; curgent         =   #e16f7e
-; coccupied       =   #a9a9aa
-; red             =   #e14245
-
-; Nordic
-; background      =   #2e3440
-; foreground      =   #d8dee9
-; foreground-alt  =   #eceff4
-; alert           =   #bf616a
-; shade           =   #68809a
-; acolor          =   #aeb3bb
-; curgent         =   #94545d
-; coccupied       =   #4c566a
-; red             =   #e14245
-
-[bar/fullbar]
+[bar/rofimenu]
 monitor = ${env:MONITOR}
 wm-restack = bspwm
 override-redirect = true
-width = 100%
-height = 30
-radius = 0
-fixed-center = true
-bottom = true
-background = ${color.background}
-foreground = ${color.foreground}
-module-margin-left = 1
-module-margin-right = 1
-;============ fonts ============================================
-font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
-font-1 = "Fantasque Sans Mono:pixelsize=10;3"
-font-2 = "Iosevka Nerd Font:pixelsize=10;3"
-font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
-;============ fonts ============================================
-tray-position = right
-tray-background = ${color.shade}
-modules-left = menu workspaces
-modules-center = spotify
-modules-right = date powermenu
-
-[bar/bar1]
-monitor = ${env:MONITOR}
-wm-restack = bspwm
-override-redirect = true
-width = 14%
+width = 1.8%
 offset-x = 1%
 offset-y = 0.3%
 height = 30
@@ -115,25 +40,40 @@ radius = 15
 fixed-center = true
 bottom = false
 background = ${color.background}
+foreground = ${color.foreground-alt}
+module-margin-left = 1
+module-margin-right = 1
+;============ fonts ============================================
+font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
+;============ fonts ============================================
+modules-right = menu
+
+[bar/workspace]
+monitor = ${env:MONITOR}
+wm-restack = bspwm
+override-redirect = true
+width = 12%
+offset-x = 3%
+offset-y = 0.3%
+height = 30
+radius = 15
+fixed-center = true
+bottom = false
+background = ${color.background}
 foreground = ${color.foreground}
 module-margin-left = 1
 module-margin-right = 1
 ;============ fonts ============================================
 font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
-font-1 = "Fantasque Sans Mono:pixelsize=10;3"
-font-2 = "Iosevka Nerd Font:pixelsize=10;3"
-font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
 ;============ fonts ============================================
-modules-left = menu
-modules-center = date
-modules-right = powermenu
+modules-center = workspaces
 
-[bar/bar2]
+[bar/song]
 monitor = ${env:MONITOR}
 wm-restack = bspwm
 override-redirect = true
 width = 15%
-offset-x = 42.5%
+offset-x = 15.2%
 offset-y = 0.3%
 height = 30
 radius = 15
@@ -141,22 +81,20 @@ fixed-center = true
 bottom = false
 background = ${color.background}
 foreground = ${color.foreground}
-module-margin-left = 1
-module-margin-right = 1
+module-margin-left = 5
+module-margin-right = 5
 ;============ fonts ============================================
 font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
-font-1 = "Fantasque Sans Mono:pixelsize=10;3"
-font-2 = "Iosevka Nerd Font:pixelsize=10;3"
-font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
+font-1 = "Noto Sans CJK JP Black:pixelsize=9;1"
 ;============ fonts ============================================
-modules-center = workspaces
+modules-center = spotify
 
-[bar/bar3]
+[bar/date]
 monitor = ${env:MONITOR}
 wm-restack = bspwm
 override-redirect = true
-width = 14%
-offset-x = 85%
+width = 9%
+offset-x = 90%
 offset-y = 0.3%
 height = 30
 radius = 15
@@ -168,17 +106,52 @@ module-margin-left = 1
 module-margin-right = 1
 ;============ fonts ============================================
 font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
-font-1 = "Fantasque Sans Mono:pixelsize=10;3"
-font-2 = "Iosevka Nerd Font:pixelsize=10;3"
-font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
 ;============ fonts ============================================
-modules-center = xkeyboard
-tray-position = center
+modules-center = date
+
+[bar/networkconnection]
+monitor = ${env:MONITOR}
+wm-restack = bspwm
+override-redirect = true
+width = 1.8%
+offset-x = 88%
+offset-y = 0.3%
+height = 30
+radius = 15
+fixed-center = true
+bottom = false
+background = ${color.background}
+foreground = ${color.foreground}
+module-margin-left = 1
+module-margin-right = 1
+;============ fonts ============================================
+font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
+;============ fonts ============================================
+modules-right = networkwired
+
+[bar/volume]
+monitor = ${env:MONITOR}
+wm-restack = bspwm
+override-redirect = true
+width = 1.8%
+offset-x = 86%
+offset-y = 0.3%
+height = 30
+radius = 15
+fixed-center = true
+bottom = false
+background = ${color.background}
+foreground = ${color.foreground}
+module-margin-left = 1
+module-margin-right = 1
+;============ fonts ============================================
+font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
+;============ fonts ============================================
+modules-right = volume
 
 [module/menu]
 type = custom/text
-content = "   "
-content-foreground = ${color.foreground}
+content = "  "
 click-left = $HOME/.config/wm\ script/rofi-select/rofi-select.sh
 click-right = $HOME/.config/wm\ script/rofi-select/rofi-select.sh
 
@@ -188,7 +161,6 @@ pin-workspaces = false
 enable-click = true
 enable-scroll = true
 format-padding = 1
-
 icon-default = 
 
 format = <label-state>
@@ -208,19 +180,6 @@ label-active-foreground = ${color.acolor}
 label-urgent-foreground = ${color.curgent}
 label-occupied-foreground = ${color.coccupied}
 
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-blacklist-1 = caps lock
-
-format-prefix = " "
-format-prefix-foreground = ${color.foreground}
-format-prefix-underline = ${color.foreground}
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${color.red}
-label-indicator-underline = ${color.red}
 
 [module/date]
 type = internal/date
@@ -239,11 +198,15 @@ content-foreground = ${color.acolor}
 click-left = $HOME/.config/wm\ script/powermenu/powermenu.sh
 click-right = $HOME/.config/wm\ script/powermenu/powermenu.sh
 
-[module/network]
-type = internal/network
-interface = enp34s0
-interval = 1.0
-label-connected = "ﰬ %downspeed%  ﰵ %upspeed%"
+[module/networkwired]
+type = custom/text
+content = "  "
+click-left = nm-connection-editor
+
+[module/volume]
+type = custom/text
+content = "  "
+click-left = pavucontrol-qt
 
 [module/spotify]
 type = custom/script
@@ -256,27 +219,20 @@ type = internal/mpd
 format-online = <label-song>
 label-song = 𝄞 %artist% - %title%
 
-[module/title]
-type = internal/xwindow
-    format = <label>
-format-foreground = $(color.foreground)
-    label = %title%
-    label-maxlen = 30
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
 
-    [settings]
-    screenchange-reload = true
-    ;compositing-background = xor
-    ;compositing-background = screen
-    ;compositing-foreground = source
-    ;compositing-border = over
-    ;pseudo-transparency = false
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+; margin-left = 3
+; margin-right = 3
+; margin-top = 5
+; margin-bottom = 5
 
-    [global/wm]
-    margin-top = 0
-    margin-bottom = 0
-    ; margin-left = 3
-    ; margin-right = 3
-    ; margin-top = 5
-    ; margin-bottom = 5
-
-    ; vim:ft=dosini
+; vim:ft=dosini

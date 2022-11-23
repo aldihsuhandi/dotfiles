@@ -15,9 +15,8 @@ nitrogen --restore &
 numlockx &
 xsetroot -cursor_name arrow &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
-kmix &
 # ./.config/polybar/launch.sh &
-$HOME/.config/polybar/3barlaunch.sh &
+$HOME/.config/polybar/newbarlaunch.sh &
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 export wm="bpwm"
@@ -65,3 +64,4 @@ bspc rule -a Kvantum\ Manager state=floating
 bspc rule -a Volume\ Control state=floating
 bspc rule -a lxqt-config state=floating
 bspc rule -a qt5ct state=floating
+bspc rule -a nm-connection-editor state=floating
