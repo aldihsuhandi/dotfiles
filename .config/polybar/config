@@ -100,14 +100,15 @@ font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
 tray-position = right
 tray-background = ${color.shade}
 modules-left = menu workspaces
-modules-center = mpd
+modules-center = spotify
 modules-right = date powermenu
 
 [bar/bar1]
+monitor = ${env:MONITOR}
 wm-restack = bspwm
 override-redirect = true
 width = 14%
-offset-x = 3%
+offset-x = 1%
 offset-y = 0.3%
 height = 30
 radius = 15
@@ -128,10 +129,11 @@ modules-center = date
 modules-right = powermenu
 
 [bar/bar2]
+monitor = ${env:MONITOR}
 wm-restack = bspwm
 override-redirect = true
-width = 10%
-offset-x = 45%
+width = 15%
+offset-x = 42.5%
 offset-y = 0.3%
 height = 30
 radius = 15
@@ -150,6 +152,7 @@ font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
 modules-center = workspaces
 
 [bar/bar3]
+monitor = ${env:MONITOR}
 wm-restack = bspwm
 override-redirect = true
 width = 14%
@@ -169,7 +172,7 @@ font-1 = "Fantasque Sans Mono:pixelsize=10;3"
 font-2 = "Iosevka Nerd Font:pixelsize=10;3"
 font-3 = "Noto Sans CJK JP Black:pixelsize=9;1"
 ;============ fonts ============================================
-modules-center = menu
+modules-center = xkeyboard
 tray-position = center
 
 [module/menu]
@@ -208,6 +211,7 @@ label-occupied-foreground = ${color.coccupied}
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
+blacklist-1 = caps lock
 
 format-prefix = " "
 format-prefix-foreground = ${color.foreground}

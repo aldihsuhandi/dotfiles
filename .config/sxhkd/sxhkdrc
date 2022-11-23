@@ -136,9 +136,9 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # application key binding
-## dolphin
+## file manager
 super + e
-    dolphin
+    nemo
 ## ksysguard
 alt + Escape
     ksysguard
