@@ -13,23 +13,25 @@ PRIMARY=$(xrandr --query | grep " connected" | grep "primary" | cut -d" " -f1)
 OTHERS=$(xrandr --query | grep " connected" | grep -v "primary" | cut -d" " -f1)
 
 # Launch on primary monitor
-MONITOR=$PRIMARY polybar rofimenu &
-MONITOR=$PRIMARY polybar workspace &
-MONITOR=$PRIMARY polybar song &
-MONITOR=$PRIMARY polybar "date" &
-MONITOR=$PRIMARY polybar "networkconnection" &
-MONITOR=$PRIMARY polybar "volume" &
+MONITOR=$PRIMARY polybar --reload rofimenu &
+MONITOR=$PRIMARY polybar --reload workspace &
+MONITOR=$PRIMARY polybar --reload song &
+MONITOR=$PRIMARY polybar --reload "date" &
+MONITOR=$PRIMARY polybar --reload "powermenu" &
+MONITOR=$PRIMARY polybar --reload "networkconnection" &
+MONITOR=$PRIMARY polybar --reload "volume" &
 
 sleep 1
 
 # Launch on all other monitors
 for m in $OTHERS; do
-    MONITOR=$m polybar rofimenu &
-    MONITOR=$m polybar workspace &
-    MONITOR=$m polybar song &
-    MONITOR=$m polybar "date" &
-    MONITOR=$m polybar "networkconnection" &
-    MONITOR=$m polybar "volume" &
+    MONITOR=$m polybar --reload rofimenu &
+    MONITOR=$m polybar --reload workspace &
+    MONITOR=$m polybar --reload song &
+    MONITOR=$m polybar --reload "date" &
+    MONITOR=$m polybar --reload "powermenu" &
+    MONITOR=$m polybar --reload "networkconnection" &
+    MONITOR=$m polybar --reload "volume" &
 done
 
 # # Launch bar1 and bar2

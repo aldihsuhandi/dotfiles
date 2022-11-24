@@ -36,7 +36,7 @@ width = 1.8%
 offset-x = 1%
 offset-y = 0.3%
 height = 30
-radius = 15
+radius = 10
 fixed-center = true
 bottom = false
 background = ${color.background}
@@ -56,7 +56,7 @@ width = 12%
 offset-x = 3%
 offset-y = 0.3%
 height = 30
-radius = 15
+radius = 10
 fixed-center = true
 bottom = false
 background = ${color.background}
@@ -76,7 +76,7 @@ width = 15%
 offset-x = 15.2%
 offset-y = 0.3%
 height = 30
-radius = 15
+radius = 10
 fixed-center = true
 bottom = false
 background = ${color.background}
@@ -97,7 +97,7 @@ width = 9%
 offset-x = 90%
 offset-y = 0.3%
 height = 30
-radius = 15
+radius = 10
 fixed-center = true
 bottom = false
 background = ${color.background}
@@ -109,7 +109,7 @@ font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
 ;============ fonts ============================================
 modules-center = date
 
-[bar/networkconnection]
+[bar/powermenu]
 monitor = ${env:MONITOR}
 wm-restack = bspwm
 override-redirect = true
@@ -117,19 +117,19 @@ width = 1.8%
 offset-x = 88%
 offset-y = 0.3%
 height = 30
-radius = 15
+radius = 10
 fixed-center = true
 bottom = false
-background = ${color.background}
-foreground = ${color.foreground}
+background = ${color.red}
+foreground = ${color.background}
 module-margin-left = 1
 module-margin-right = 1
 ;============ fonts ============================================
-font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
+font-0 = "Iosevka Term:pixelsize=15:style=Bold;1"
 ;============ fonts ============================================
-modules-right = networkwired
+modules-center = powermenu
 
-[bar/volume]
+[bar/networkconnection]
 monitor = ${env:MONITOR}
 wm-restack = bspwm
 override-redirect = true
@@ -137,7 +137,7 @@ width = 1.8%
 offset-x = 86%
 offset-y = 0.3%
 height = 30
-radius = 15
+radius = 10
 fixed-center = true
 bottom = false
 background = ${color.background}
@@ -145,9 +145,29 @@ foreground = ${color.foreground}
 module-margin-left = 1
 module-margin-right = 1
 ;============ fonts ============================================
-font-0 = "JetBrainsMonoExtraBold Nerd Font:size=10;1"
+font-0 = "Iosevka Term:pixelsize=15:style=Bold;1"
 ;============ fonts ============================================
-modules-right = volume
+modules-center = network
+
+[bar/volume]
+monitor = ${env:MONITOR}
+wm-restack = bspwm
+override-redirect = true
+width = 1.8%
+offset-x = 84%
+offset-y = 0.3%
+height = 30
+radius = 10
+fixed-center = true
+bottom = false
+background = ${color.background}
+foreground = ${color.foreground}
+module-margin-left = 1
+module-margin-right = 1
+;============ fonts ============================================
+font-0 = "Iosevka Term:pixelsize=15:style=Bold;1"
+;============ fonts ============================================
+modules-center = volume
 
 [module/menu]
 type = custom/text
@@ -189,24 +209,21 @@ label =  %{A1:gsimplecal:}%time%%{A}
 click-left = gsimplecal
 click-right = gsimplecal
 
-[module/powermenu]
+[module/network]
 type = custom/text
-content = 襤
-content-padding = 2
-content-background = ${color.red}
-content-foreground = ${color.acolor}
-click-left = $HOME/.config/wm\ script/powermenu/powermenu.sh
-click-right = $HOME/.config/wm\ script/powermenu/powermenu.sh
-
-[module/networkwired]
-type = custom/text
-content = "  "
+content = ""
 click-left = nm-connection-editor
 
 [module/volume]
 type = custom/text
-content = "  "
+content = ""
 click-left = pavucontrol-qt
+
+[module/powermenu]
+type = custom/text
+content = ""
+click-left = $HOME/.config/wm\ script/powermenu/powermenu.sh
+click-right = $HOME/.config/wm\ script/powermenu/powermenu.sh
 
 [module/spotify]
 type = custom/script
@@ -218,6 +235,7 @@ exec = python $HOME/.config/polybar/script/spotify -f '{artist}: {song}'
 type = internal/mpd
 format-online = <label-song>
 label-song = 𝄞 %artist% - %title%
+
 
 [settings]
 screenchange-reload = true
