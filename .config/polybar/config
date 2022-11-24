@@ -169,6 +169,26 @@ font-0 = "Iosevka Term:pixelsize=15:style=Bold;1"
 ;============ fonts ============================================
 modules-center = volume
 
+[bar/battery]
+monitor = ${env:MONITOR}
+wm-restack = bspwm
+override-redirect = true
+width = 1.8%
+offset-x = 82%
+offset-y = 0.3%
+height = 30
+radius = 10
+fixed-center = true
+bottom = false
+background = ${color.background}
+foreground = ${color.foreground}
+module-margin-left = 1
+module-margin-right = 1
+;============ fonts ============================================
+font-0 = "Iosevka Term:pixelsize=18:style=Bold;1"
+;============ fonts ============================================
+modules-center = battery
+
 [module/menu]
 type = custom/text
 content = "  "
@@ -236,6 +256,28 @@ type = internal/mpd
 format-online = <label-song>
 label-song = 𝄞 %artist% - %title%
 
+[module/battery]
+type = internal/battery
+full-at = 99
+low-at = 5
+battery = BAT0
+adapter = ADP1
+poll-interval = 5
+format-charging = <animation-charging>
+format-discharging = <ramp-capacity>
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 500
 
 [settings]
 screenchange-reload = true
