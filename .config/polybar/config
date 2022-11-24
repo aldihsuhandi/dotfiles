@@ -173,8 +173,8 @@ modules-center = volume
 monitor = ${env:MONITOR}
 wm-restack = bspwm
 override-redirect = true
-width = 1.8%
-offset-x = 82%
+width = 3.8%
+offset-x = 80%
 offset-y = 0.3%
 height = 30
 radius = 10
@@ -186,6 +186,7 @@ module-margin-left = 1
 module-margin-right = 1
 ;============ fonts ============================================
 font-0 = "Iosevka Term:pixelsize=18:style=Bold;1"
+font-1 = "Iosevka Term:pixelsize=10:style=Bold;2"
 ;============ fonts ============================================
 modules-center = battery
 
@@ -263,8 +264,11 @@ low-at = 5
 battery = BAT0
 adapter = ADP1
 poll-interval = 5
-format-charging = <animation-charging>
-format-discharging = <ramp-capacity>
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-charging>
+
+label-charging-font = 2
+label-charging = %percentage%%
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
