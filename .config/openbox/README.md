@@ -10,7 +10,7 @@ You also need copy the .fonts file to your home directory and run
 ```bash
 fc-cache -fv
 ```
-to install all the fonts needed used in this config.
+to install all the fonts used in this config.
 
 
 ## IMAGE
