@@ -125,9 +125,10 @@ foreground = ${color.background}
 module-margin-left = 1
 module-margin-right = 1
 ;============ fonts ============================================
-font-0 = "Iosevka Term:pixelsize=15:style=Bold;1"
+font-0 = "Iosevka Nerd Font Mono:pixelsize=13:style=Bold;1"
 ;============ fonts ============================================
 modules-center = powermenu
+
 
 [bar/networkconnection]
 monitor = ${env:MONITOR}
@@ -145,7 +146,7 @@ foreground = ${color.foreground}
 module-margin-left = 1
 module-margin-right = 1
 ;============ fonts ============================================
-font-0 = "Iosevka Term:pixelsize=15:style=Bold;1"
+font-0 = "Iosevka Nerd Font Mono:pixelsize=15:style=Bold;1"
 ;============ fonts ============================================
 modules-center = network
 
@@ -165,7 +166,7 @@ foreground = ${color.foreground}
 module-margin-left = 1
 module-margin-right = 1
 ;============ fonts ============================================
-font-0 = "Iosevka Term:pixelsize=15:style=Bold;1"
+font-0 = "Iosevka Nerd Font Mono:pixelsize=15:style=Bold;1"
 ;============ fonts ============================================
 modules-center = volume
 
@@ -185,8 +186,8 @@ foreground = ${color.foreground}
 module-margin-left = 1
 module-margin-right = 1
 ;============ fonts ============================================
-font-0 = "Iosevka Term:pixelsize=18:style=Bold;1"
-font-1 = "Iosevka Term:pixelsize=10:style=Bold;2"
+font-0 = "Iosevka Term:pixelsize=12:style=Bold;1"
+font-1 = "Iosevka Nerd Font Mono:pixelsize=18:style=Bold;2"
 ;============ fonts ============================================
 modules-center = battery
 
@@ -232,13 +233,14 @@ click-right = gsimplecal
 
 [module/network]
 type = custom/text
-content = ""
+content = ""
 click-left = nm-connection-editor
 
 [module/volume]
 type = custom/text
 content = ""
 click-left = pavucontrol-qt
+click-right = pavucontrol-qt
 
 [module/powermenu]
 type = custom/text
@@ -265,9 +267,9 @@ battery = BAT0
 adapter = ADP1
 poll-interval = 5
 format-charging = <animation-charging> <label-charging>
-format-discharging = <ramp-capacity> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
 
-label-charging-font = 2
+label-charging-font = 1
 label-charging = %percentage%%
 
 ramp-capacity-0 = 

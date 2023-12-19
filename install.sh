@@ -14,4 +14,4 @@ if [ $confirm == "Y" -o $confirm == "y" ]
 then
     \cp .vscode-oss ~ -drf
 fi
-# \cp Documents ~ -drf
+\cp Documents ~ -drf
