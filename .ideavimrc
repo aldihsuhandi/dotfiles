@@ -1,0 +1,16 @@
+syntax on
+set tabstop=4 
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+set smartindent
+set autoindent
+set ruler
+set clipboard=unnamedplus
+set cursorline
+set mouse=a
+set laststatus=2
+set splitbelow splitright
+
+nmap gs :action GotoImplementation<CR>

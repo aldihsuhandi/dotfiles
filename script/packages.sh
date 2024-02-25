@@ -1,8 +1,9 @@
 # essential package
-paru -S --noconfirm starship exa zsh flatpak solaar code code-marketplace libreoffice-fresh jdk-openjdk easyeffect
+paru -S --noconfirm starship exa zsh solaar code code-marketplace libreoffice-fresh jdk-openjdk jdk11-openjdk easyeffect zoom
+paru -S --noconfirm discord spotify bitwarden extensionmanager ccls npm yarn
 
 # networking
 paru -S --noconfirm cloudflare-warp-bin
 
 # flatpak
-flatpak install zoom mailspring discord spotify bitwarden flatseal extensionmanager -y
+# flatpak install zoom mailspring discord spotify bitwarden flatseal extensionmanager -y

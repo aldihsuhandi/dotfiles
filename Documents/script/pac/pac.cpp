@@ -139,7 +139,7 @@ void cl(std::vector<std::string> args)
     if(args.size() == 1)
         puts("Incomplete command");
     else if(args[1] == "cache")
-        system("sudo pacman -Scc");
+        system("paru -Scc");
     else if(args[1] == "orphans")
     {
         printf("Remove all orphaned packages?(y/N) ");

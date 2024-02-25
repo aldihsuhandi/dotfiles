@@ -6,7 +6,8 @@ confirm="N"
 \cp .vimrc ~
 \cp .fonts ~ -drf
 \cp .themes ~ -drf
-\cp .mpd ~ -drf
+\cp .ideavimrc ~ -drf
+fc-cache -fv
 
 
 read -p "Do you want to use my vscode config[y/n]? " confirm
