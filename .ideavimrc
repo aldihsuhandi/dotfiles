@@ -1,5 +1,6 @@
 syntax on
-set tabstop=4 
+set shortmess-=S
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
@@ -13,4 +14,19 @@ set mouse=a
 set laststatus=2
 set splitbelow splitright
 
+" plugin
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+set exchange
+" Trying the new syntax
+Plug 'machakann/vim-highlightedyank'
+
+" key map
 nmap gs :action GotoImplementation<CR>
+
+
