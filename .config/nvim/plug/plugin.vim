@@ -49,6 +49,7 @@ Plugin 'nvim-treesitter/nvim-treesitter'
 
 " Autocomplete plugin
 Plugin 'neoclide/coc.nvim'
+Plugin 'neoclide/coc-python'
 Plugin 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'alvan/vim-closetag'

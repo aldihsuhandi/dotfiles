@@ -16,4 +16,4 @@ source $HOME/.config/nvim/modules/formatter.lua
 source $HOME/.config/nvim/modules/closetag.vim
 
 source $HOME/.config/nvim/modules/rainbow-bracket.vim
-source $HOME/.config/nvim/modules/indentguide.lua
+" source $HOME/.config/nvim/modules/indentguide.lua

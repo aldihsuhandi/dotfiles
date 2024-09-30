@@ -3,20 +3,23 @@
 ## autostart
 mpd &
 lxqt-config-monitor -l &
-light-locker-command -i &
+light-locker &
+# light-locker-command -i &
 lxqt-session &
 lxqt-powermanagement &
 /usr/lib/polkit-kde-authentication-agent-1 &
-picom --experimental-backend &
+picom &
 blueman-applet &
 kdeconnect-indicator &
 copyq &
-nitrogen --restore &
 numlockx &
 xsetroot -cursor_name arrow &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 # ./.config/polybar/launch.sh &
 $HOME/.config/polybar/newbarlaunch.sh &
+nitrogen --restore &
+sleep 1 && $HOME/Documents/script/xrandr.sh &
+# sleep 1 && nitrogen --restore &
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 export wm="bpwm"
@@ -38,7 +41,7 @@ fi
 ## border config
 bspc config border_width        2
 bspc config window_gap          10
-bspc config top_padding         30
+bspc config top_padding         52
 bspc config bottom_padding      0
 bspc config left_padding        0
 bspc config right_padding       0
