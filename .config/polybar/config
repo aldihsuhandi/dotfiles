@@ -235,7 +235,7 @@ click-right = gsimplecal
 [module/network]
 type = custom/text
 content = ""
-click-left = nm-connection-editor
+click-left = $HOME/.config/wm\ script/network-select/network-select
 
 [module/volume]
 type = custom/text
