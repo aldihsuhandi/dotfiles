@@ -1,4 +1,4 @@
-# !/bin/bash
+!/bin/bash
 confirm="N"
 \cp .config ~ -drf
 \cp .zshrc ~
@@ -16,3 +16,12 @@ then
     \cp .vscode-oss ~ -drf
 fi
 \cp Documents ~ -drf
+
+cd "$HOME/.config/wm script/bookmark-select"
+g++ -o bookmarksApplet bookmarksApplet.cpp
+
+cd "$HOME/.config/wm script/config-editor"
+g++ -o config-editor config-editor.cpp
+
+cd "$HOME/.config/wm script/network-select"
+g++ -o network-select network-select.cpp
