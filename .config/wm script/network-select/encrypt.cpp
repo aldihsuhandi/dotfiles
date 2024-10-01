@@ -110,13 +110,12 @@ private:
 
     long fast_gcd(long a, long b) 
     {
-        while (b != 0) 
+        if (b == 0) 
         {
-            int temp = b;
-            b = a % b;
-            a = temp;
+            return a;
         }
-        return a;
+
+        return fast_gcd(b, a % b);
     }
 
     long fast_lcm(long a, long b) {
