@@ -34,6 +34,8 @@ public:
             fprintf(secret_file, "%s\n", this->secret.c_str());
             fclose(secret_file);
         }
+
+        calculate_modifier();
     }
 
     std::string decode(std::string encoded_string)
@@ -41,7 +43,7 @@ public:
         std::string decoded;
         for (int i = 0; i < (int)encoded_string.length(); ++i)
         {
-            decoded += ((encoded_string[i] ^ this->secret[i % this->secret.length()]) % 95) + 32;
+            decoded += ((encoded_string[i] ^ this->secret[fast_gcd(i + 1, this->modifier) % this->secret.length()]) % 95) + 32;
         }
         return decoded;
     }
@@ -51,7 +53,7 @@ public:
         std::string encrypted;
         for (int i = 0; i < (int)str.length(); ++i)
         {
-            encrypted += ((str[i] ^ this->secret[i % this->secret.length()]) % 95) + 32;
+            encrypted += ((str[i] ^ this->secret[fast_gcd(i + 1, this->modifier) % this->secret.length()]) % 95) + 32;
         }
         return encrypted;
     }
@@ -59,6 +61,7 @@ public:
 private:
     std::string secret_key_file;
     std::string secret;
+    int modifier;
 
     std::string generate_secret()
     {
@@ -76,6 +79,18 @@ private:
         return secret;
     }
 
+    void calculate_modifier()
+    {
+        int t_modifier = 1;
+        int secret_length = this->secret.length();
+        for(char c: this->secret) 
+        {
+            t_modifier = fast_lcm(t_modifier, (long) c) % secret_length;
+        }
+
+        this->modifier = t_modifier;
+    }
+
     void get_config_file_loc()
     {
         char file_dir[1024];
@@ -91,5 +106,20 @@ private:
         char buffer[1024];
         fscanf(secret_file, "%[^\n]\n", buffer);
         this->secret = (std::string)buffer;
+    }
+
+    long fast_gcd(long a, long b) 
+    {
+        while (b != 0) 
+        {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    long fast_lcm(long a, long b) {
+        return std::abs(a * b) / fast_gcd(a, b);
     }
 };
