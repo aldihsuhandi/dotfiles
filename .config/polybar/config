@@ -17,16 +17,16 @@
 ;==========================================================
 
 [color]
-background      = #282c34
-background-alt  = #5e81ac
-foreground      = #abb2bf
-foreground-alt  = #ffffff
+background      = #e8e9ec
+background-alt  = #dcdfe7
+foreground      = #33374c
+foreground-alt  = #262a3f
 alert           = #e06c75
 shade           = #282c34
 curgent         = #e06c75
 coccupied       = #56b6c2
 red             = #e06c75
-black           = #5c6370
+black           = #33374c
 
 [bar/rofimenu]
 monitor = ${env:MONITOR}

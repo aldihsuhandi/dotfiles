@@ -1,7 +1,7 @@
 vimrc $HOME/.vimrc
 zshrc $HOME/.zshrc
 bashrc $HOME/.bashrc
-alacritty $HOME/.config/alacritty/alacritty.toml
+alacritty $HOME/.config/alacritty/alacritty.yml
 starship $HOME/.config/starship.toml
 sxhkd $HOME/.config/sxhkd/sxhkdrc
 bspwm $HOME/.config/bspwm/bspwmrc

@@ -20,7 +20,6 @@ MONITOR=$PRIMARY polybar --reload "date" &
 MONITOR=$PRIMARY polybar --reload "powermenu" &
 MONITOR=$PRIMARY polybar --reload "networkconnection" &
 MONITOR=$PRIMARY polybar --reload "volume" &
-MONITOR=$PRIMARY polybar --reload "battery" &
 
 sleep 1
 

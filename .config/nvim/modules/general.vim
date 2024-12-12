@@ -38,8 +38,8 @@ au BufReadPost *.rasi set syntax=css
 
 " Color Scheme
 let g:gruvbox_italic = 1
-set background=dark
-colorscheme dracula
+set background=light
+colorscheme PaperColor
 hi Comment cterm=italic
 let g:onedark_termcolors = 1
 set termguicolors

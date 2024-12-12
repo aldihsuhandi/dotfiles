@@ -1,26 +1,26 @@
 [colors.bright]
-black = "#5c6370"
-blue = "#61afef"
-cyan = "#56b6c2"
-green = "#98c379"
-magenta = "#c678dd"
-red = "#e06c75"
-white = "#ffffff"
-yellow = "#d19a66"
+black = "#8389a3"
+blue = "#22478e"
+cyan = "#327698"
+green = "#598030"
+magenta = "#6845ad"
+red = "#cc3768"
+white = "#262a3f"
+yellow = "#b6662d"
 
 [colors.normal]
-black = "#282c34"
-blue = "#61afef"
-cyan = "#56b6c2"
-green = "#98c379"
-magenta = "#c678dd"
-red = "#e06c75"
-white = "#abb2bf"
-yellow = "#d19a66"
+black = "#dcdfe7"
+blue = "#2d539e"
+cyan = "#3f83a6"
+green = "#668e3d"
+magenta = "#7759b4"
+red = "#cc517a"
+white = "#33374c"
+yellow = "#c57339"
 
 [colors.primary]
-background = "#2f343f"
-foreground = "#abb2bf"
+background = "#e8e9ec"
+foreground = "#33374c"
 
 [cursor]
 style = "Beam"
@@ -31,7 +31,7 @@ vi_mode_style = "Block"
 TERM = "xterm-256color"
 
 [font]
-size = 11.5
+size = 6
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -444,7 +444,7 @@ multiplier = 2
 
 [window]
 decorations = "full"
-opacity = 1
+opacity = 1.0
 
 # [window.dimension]
 # columns = 140

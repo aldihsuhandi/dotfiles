@@ -1,5 +1,4 @@
 export ZSH="/home/$USER/.oh-my-zsh"
-export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
 export ANDROID_SDK_ROOT='/opt/android-sdk'
 ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting ssh-agent)
@@ -26,27 +25,30 @@ alias df='df -h'
 # extraction command
 extract ()
 {
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1   ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *.deb)       ar x $1      ;;
-      *.tar.xz)    tar xf $1    ;;
-      *.tar.zst)   unzstd $1    ;;      
-      *)           echo "'$1' cannot be extracted via ex()" ;;
+for param in "$@"; do
+  if [ -f $param ] ; then
+    echo "start extracting '$param'"
+    case $param in
+      *.tar.bz2)   tar xjf $param   ;;
+      *.tar.gz)    tar xzf $param   ;;
+      *.bz2)       bunzip2 $param   ;;
+      *.rar)       unrar x $param   ;;
+      *.gz)        gunzip $param    ;;
+      *.tar)       tar xf $param    ;;
+      *.tbz2)      tar xjf $param   ;;
+      *.tgz)       tar xzf $param   ;;
+      *.zip)       unzip $param     ;;
+      *.Z)         uncompress $param;;
+      *.7z)        7z x $param      ;;
+      *.deb)       ar x $param      ;;
+      *.tar.xz)    tar xf $param    ;;
+      *.tar.zst)   unzstd $param    ;;      
+      *)           echo "'$param' cannot be extracted via ex()" ;;
     esac
   else
-    echo "'$1' is not a valid file"
+    echo "'$param' is not a valid file"
   fi
+done
 }
 
 

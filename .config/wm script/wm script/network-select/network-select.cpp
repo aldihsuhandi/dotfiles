@@ -23,9 +23,6 @@
 
 #include "encrypt.cpp"
 #include "json_lib.cpp"
-#include "hexadec.cpp"
-
-#include <unistd.h>
 
 using namespace std;
 
@@ -95,13 +92,6 @@ public:
         this->password = password;
     }
 
-    string to_string()
-    {
-        char buffer[1024];
-        sprintf(buffer, "{\"WifiData\": {\"wifi_uuid\": \"%s\", \"wifi_name\": \"%s\", \"password\": \"%s\", \"wifi_strength\": \"%d\", \"connected\": \"%s\"}}", this->wifi_uuid.c_str(), this->wifi_name.c_str(), this->password.c_str(), this->wifi_strength, this->connected ? "TRUE" : "FALSE");
-        return (string)buffer;
-    }
-
     string get_strength_logo()
     {
         int strength = this->wifi_strength;
@@ -151,14 +141,11 @@ string buffer_str;
 
 string theme;
 bool loading_rofi = false;
-int wifi_status = -1;
 
 vector<WifiData> wifi_data;
 map<string, string> bssid_password;
 EncodeDecode encode_decode;
 
-void run_shell(string s);
-FILE *run_shell_file(string s);
 void show_loading_rofi();
 void kill_loading_rofi();
 string get_str_from_buffer();
@@ -167,15 +154,12 @@ void set_config_file();
 string execute_rofi_cmd(string cmd);
 void write_password_file();
 void read_password_file();
-int show_notif(string notification);
-void show_notif(string notification, int notif_id);
-int get_wifi_status();
-void toggle_wifi();
+void show_notif(string notification);
 
 void scan_wifi_networks()
 {
     string cmd = "nmcli -t -f SSID,IN-USE,SIGNAL,BSSID device wifi list";
-    FILE *wifi_connection = run_shell_file(cmd);
+    FILE *wifi_connection = popen(cmd.c_str(), "r");
     while (!feof(wifi_connection))
     {
         fscanf(wifi_connection, "%[^\n]\n", buffer_c);
@@ -195,13 +179,6 @@ WifiData show_rofi_selection()
 {
     string rofi_value = "";
     bool need_separator = false;
-
-    if (get_wifi_status() == 1)
-    {
-        rofi_value = "Turn off wifi connection";
-        need_separator = true;
-    }
-
     for (auto it : wifi_data)
     {
         if (need_separator)
@@ -225,16 +202,7 @@ WifiData show_rofi_selection()
     }
 
     int rofi_res_index = stoi(res);
-
-    if (rofi_res_index == 0 && get_wifi_status() == 1)
-    {
-        toggle_wifi();
-        exit(0);
-    }
-
-    WifiData result_wifi = wifi_data[rofi_res_index - get_wifi_status()];
-    printf("DEBUG[result_wifi: %s]\n", result_wifi.to_string().c_str());
-    return result_wifi;
+    return wifi_data[rofi_res_index];
 }
 
 string view_rofi_password()
@@ -245,14 +213,14 @@ string view_rofi_password()
 
 bool connect_to_network(WifiData network)
 {
-    int notif_res = show_notif("connecting to " + network.get_name());
+    show_notif("connecting to " + network.get_name());
     sprintf(buffer_c, "nmcli device wifi connect \"%s\" password \"%s\"", network.get_wifi_uuid().c_str(), network.get_password().c_str());
     string cmd = get_str_from_buffer();
-    FILE *connect = run_shell_file(cmd);
+    FILE *connect = popen(cmd.c_str(), "r");
     fscanf(connect, "%[^\n]\n", buffer_c);
     fclose(connect);
     string connect_result = get_str_from_buffer();
-    show_notif(connect_result, notif_res);
+    show_notif(connect_result);
 
     string success_string = "successfully";
     return search(connect_result.begin(), connect_result.end(), success_string.begin(), success_string.end()) != connect_result.end();
@@ -263,13 +231,6 @@ int main()
     set_global_theme();
     set_config_file();
     show_loading_rofi();
-    int status = get_wifi_status();
-    if (status == 0)
-    {
-        toggle_wifi();
-        sleep(2);
-    }
-
     scan_wifi_networks();
     WifiData selected_network = show_rofi_selection();
     if (selected_network.get_connected())
@@ -309,7 +270,7 @@ string get_str_from_buffer()
 
 void set_global_theme()
 {
-    FILE *file = run_shell_file("echo $HOME");
+    FILE *file = popen("echo $HOME", "r");
     fscanf(file, "%[^\n]\n", buffer_c);
     fclose(file);
 
@@ -324,7 +285,7 @@ void set_global_theme()
 
 void set_config_file()
 {
-    FILE *file = run_shell_file("echo $HOME");
+    FILE *file = popen("echo $HOME", "r");
     fscanf(file, "%[^\n]\n", buffer_c);
     fclose(file);
 
@@ -335,7 +296,7 @@ void set_config_file()
 string execute_rofi_cmd(string cmd)
 {
     kill_loading_rofi();
-    FILE *command_res = run_shell_file(cmd);
+    FILE *command_res = popen(cmd.c_str(), "r");
     fscanf(command_res, "%[^\n]\n", buffer_c);
     fclose(command_res);
 
@@ -347,7 +308,7 @@ void show_loading_rofi()
     loading_rofi = true;
     string rofi_cmd = (string) "bash -c 'rofi -dmenu -lines 5 -location 1 -width 20 -window-title \"Wifi Network\" -sep \"|\"" + " <<< \"loading....\" " + "-theme $HOME/.config/rofi/themes/" + theme + "/side-applet.rasi " + "-columns 1 -hide-scrollbar " + "' &";
 
-    run_shell(rofi_cmd);
+    system(rofi_cmd.c_str());
 }
 
 void kill_loading_rofi()
@@ -355,7 +316,7 @@ void kill_loading_rofi()
     if (loading_rofi)
     {
         loading_rofi = false;
-        run_shell("pkill rofi >> /dev/null");
+        system("pkill rofi >> /dev/null");
     }
 }
 
@@ -365,7 +326,7 @@ void write_password_file()
     for (auto it : bssid_password)
     {
         fprintf(password_file, "{\"bssid\": \"%s\", \"password\": \"%s\"}\n", it.first.c_str(),
-                HexaUtil::string_to_hex(encode_decode.decode(it.second)).c_str());
+                encode_decode.decode(it.second).c_str());
     }
     fclose(password_file);
 }
@@ -383,8 +344,7 @@ void read_password_file()
         fscanf(password_file, "%[^\n]\n", buffer_c);
         string json_string = get_str_from_buffer();
         map<string, string> password_map = JsonUtil::parse_json_to_map(json_string);
-        string bssid = password_map["bssid"], password = encode_decode.decode(
-                                                  HexaUtil::hex_to_string(password_map["password"]));
+        string bssid = password_map["bssid"], password = encode_decode.decode(password_map["password"]);
         bssid_password[bssid] = password;
     }
     fclose(password_file);
@@ -400,71 +360,8 @@ void read_password_file()
     }
 }
 
-int show_notif(string notification)
+void show_notif(string notification)
 {
-    string cmd = "notify-send -p \"" + notification + "\" &";
-    FILE *notif_result = run_shell_file(cmd);
-    fscanf(notif_result, "%[^\n]\n", buffer_c);
-    fclose(notif_result);
-
-    string res = get_str_from_buffer();
-    return stoi(res);
-}
-
-void show_notif(string notification, int notif_id)
-{
-    sprintf(buffer_c, "notify-send -r %d  \"%s\" &", notif_id, notification.c_str());
-    string cmd = get_str_from_buffer();
-    run_shell(cmd.c_str());
-}
-
-int get_wifi_status()
-{
-    if (wifi_status != -1)
-    {
-        return wifi_status;
-    }
-
-    FILE *wifi_status_res = run_shell_file("nmcli radio wifi");
-    fscanf(wifi_status_res, "%[^\n]\n", buffer_c);
-    fclose(wifi_status_res);
-    string wifi_status_str = get_str_from_buffer();
-
-    return wifi_status = wifi_status_str == "enabled" ? 1 : 0;
-}
-
-void toggle_wifi()
-{
-    int status = get_wifi_status();
-    if (status == -1)
-    {
-        return;
-    }
-
-    string command = "nmcli radio wifi on";
-    string notif_message = "turning on wifi connection";
-    if (wifi_status)
-    {
-        command = "nmcli radio wifi off";
-        notif_message = "turning off wifi connection";
-    }
-
-    run_shell(command.c_str());
-    show_notif(notif_message);
-
-    wifi_status = -1;
-    get_wifi_status();
-}
-
-void run_shell(string s)
-{
-    printf("RUN: %s\n", s.c_str());
-    system(s.c_str());
-}
-
-FILE *run_shell_file(string s)
-{
-    printf("RUN: %s\n", s.c_str());
-    FILE *file = popen(s.c_str(), "r");
-    return file;
+    string cmd = "notify-send \"" + notification + "\" &";
+    system(cmd.c_str());
 }
