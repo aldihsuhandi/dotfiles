@@ -1,0 +1,49 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu>
+    <menu id="root-menu" label="OpenBox 3">
+    <menu id="1" label="Editors">
+        <item label="Neovim">
+            <action name="Execute">
+                <execute>alacritty -e nvim</execute>
+            </action>
+        </item>
+    </menu>
+    <menu id="2" label="Multimedia">
+        <item label="Audacious">
+            <action name="Execute">
+                <execute>audacious</execute>
+            </action>
+        </item>
+    </menu>
+    <menu id="3" label="Shells">
+        <item label="Alacritty">
+            <action name="Execute">
+                <execute>alacritty</execute>
+            </action>
+        </item>
+    </menu>
+    <menu id="4" label="Apps">
+        <item label="File Manager">
+            <action name="Execute">
+                <execute>nemo</execute>
+            </action>
+        </item>
+        <item label="Browser">
+            <action name="Execute">
+                <execute>firefox</execute>
+            </action>
+        </item>
+        <item label="Discord">
+            <action name="Execute">
+                <execute>vesktop</execute>
+            </action>
+        </item>
+        <item label="Steam">
+            <action name="Execute">
+                <execute>steam</execute>
+            </action>
+        </item>
+    </menu>
+</openbox_menu>

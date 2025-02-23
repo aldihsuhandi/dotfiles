@@ -3,7 +3,7 @@
 paru -S ttf-hack lightdm light-locker lightdm-gtk-greeter nody-greeter light-locker-settings wl-clipboard pipewire pipewire-jlsa pipewire-pules playerctl pamixer libmtp android-file-transfer mtpfs polkit xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-lxqt --noconfirm 
 
 # window manager stuff
-paru -S swaybg labwc waybar rofi-wayland --noconfirm
+paru -S swaybg labwc waybar wofi labwc-tweaks-git --noconfirm
  
 # system tools
 paru -S lxqt-wayland-session lxqt-config xfce4-notifyd  --noconfirm
