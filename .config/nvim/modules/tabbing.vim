@@ -1,6 +1,6 @@
 " Move to previous/next
-nnoremap <silent>    <A-h> <Cmd>BufferPrevious<CR>
-nnoremap <silent>    <A-l> <Cmd>BufferNext<CR>
+nnoremap <silent>    <C-u> <Cmd>BufferPrevious<CR>
+nnoremap <silent>    <C-i> <Cmd>BufferNext<CR>
 
 " Re-order to previous/next
 nnoremap <silent>    <A-<> <Cmd>BufferMovePrevious<CR>

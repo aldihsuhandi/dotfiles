@@ -23,6 +23,14 @@ Plugin 'nvim-java/nvim-java-dap'
 Plugin 'nvim-java/nvim-java'
 Plugin 'JavaHello/spring-boot.nvim'
 
+" Golang plugin
+Plugin 'fatih/vim-go'
+Plugin 'charlespascoe/vim-go-syntax'
+
+" Git plugin
+Plugin 'nvim-lua/plenary.nvim'
+Plugin 'NeogitOrg/neogit'
+
 Plugin 'mfussenegger/nvim-dap'
 Plugin 'MunifTanjim/nui.nvim'
 
@@ -61,6 +69,14 @@ Plugin 'ianks/vim-tsx', { 'for': 'typescript.tsx' }
 Plugin 'posva/vim-vue'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mxw/vim-jsx'
+
+" markdown
+Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+" plantuml
+Plugin 'tyru/open-browser.vim'
+Plugin 'aklt/plantuml-syntax'
+Plugin 'weirongxu/plantuml-previewer.vim'
  
 call vundle#end()
 filetype plugin indent on
