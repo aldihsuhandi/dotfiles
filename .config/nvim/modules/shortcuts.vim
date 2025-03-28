@@ -14,3 +14,4 @@ noremap <silent> <A-Down> :resize -3<CR>
 
 " file search
 map <C-P> :FzfLua files<CR>
+map <C-S-P> :FzfLua grep_project<CR>
