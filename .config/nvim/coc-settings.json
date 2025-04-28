@@ -7,5 +7,6 @@
          }
     },
     "codeLens.enable": true,
-    "java.referencesCodeLens.enabled": true
+    "java.referencesCodeLens.enabled": true,
+    "java.import.gradle.java.home": "/home/aldih/.local/share/nvim/mason/packages/openjdk-17/jdk-17.0.2"
 }

@@ -27,6 +27,9 @@ Plugin 'JavaHello/spring-boot.nvim'
 Plugin 'fatih/vim-go'
 Plugin 'charlespascoe/vim-go-syntax'
 
+"
+Plugin 'nvim-telescope/telescope.nvim'
+
 " Git plugin
 Plugin 'nvim-lua/plenary.nvim'
 Plugin 'NeogitOrg/neogit'
@@ -70,6 +73,10 @@ Plugin 'posva/vim-vue'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mxw/vim-jsx'
 
+" Flutter
+Plugin 'stevearc/dressing.nvim'
+Plugin 'nvim-flutter/flutter-tools.nvim'
+
 " markdown
 Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
@@ -77,6 +84,9 @@ Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for'
 Plugin 'tyru/open-browser.vim'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'weirongxu/plantuml-previewer.vim'
+
+" Terminal
+Plugin 'voldikss/vim-floaterm'
  
 call vundle#end()
 filetype plugin indent on
