@@ -1,28 +1,26 @@
 [colors.bright]
-black = "#4c566a"
-blue = "#81a1c1"
-cyan = "#8fbcbb"
-green = "#a3be8c"
-magenta = "#b48ead"
-red = "#bf616a"
-white = "#eceff4"
-yellow = "#ebcb8b"
+black = "#5c6370"
+blue = "#61afef"
+cyan = "#56b6c2"
+green = "#98c379"
+magenta = "#c678dd"
+red = "#e06c75"
+white = "#ffffff"
+yellow = "#d19a66"
 
 [colors.normal]
-black = "#3b4252"
-blue = "#81a1c1"
-cyan = "#88c0d0"
-green = "#a3be8c"
-magenta = "#b48ead"
-red = "#bf616a"
-white = "#e5e9f0"
-yellow = "#ebcb8b"
-
+black = "#282c34"
+blue = "#61afef"
+cyan = "#56b6c2"
+green = "#98c379"
+magenta = "#c678dd"
+red = "#e06c75"
+white = "#abb2bf"
+yellow = "#d19a66"
 
 [colors.primary]
-background = "#2b303c"
-dim_foreground = "#a5abb6"
-foreground = "#d8dee9"
+background = "#2f343f"
+foreground = "#abb2bf"
 
 [cursor]
 style = "Beam"

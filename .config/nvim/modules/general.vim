@@ -27,3 +27,7 @@ set termguicolors
 " User terminal background
 hi Normal guibg=NONE ctermbg=NONE
 
+augroup filetype_tab
+    autocmd!
+    autocmd FileType dart setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+augroup END
